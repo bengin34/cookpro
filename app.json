@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "cookpro-app",
-    "slug": "cookpro-app",
+    "name": "CookPro",
+    "slug": "cookpro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "cookproapp",
+    "scheme": "cookpro",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {

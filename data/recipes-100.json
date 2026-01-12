@@ -1,0 +1,6522 @@
+[
+  {
+    "id": "r001",
+    "title": "Tavuk Domates sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Domates ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r002",
+    "title": "Tavuk ve Domates firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Domates malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r003",
+    "title": "Tavuk Domates guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Domates ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r004",
+    "title": "Tavuk Domates tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Domates malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r005",
+    "title": "Tavuk Domates izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Domates malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r006",
+    "title": "Tavuk Yesil biber sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Yesil biber ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r007",
+    "title": "Tavuk ve Yesil biber firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Yesil biber malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r008",
+    "title": "Tavuk Yesil biber guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Yesil biber ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r009",
+    "title": "Tavuk Yesil biber tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Yesil biber malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r010",
+    "title": "Tavuk Yesil biber izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Yesil biber malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r011",
+    "title": "Tavuk Kirmizi biber sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Kirmizi biber ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r012",
+    "title": "Tavuk ve Kirmizi biber firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kirmizi biber malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r013",
+    "title": "Tavuk Kirmizi biber guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Kirmizi biber ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r014",
+    "title": "Tavuk Kirmizi biber tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kirmizi biber malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r015",
+    "title": "Tavuk Kirmizi biber izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kirmizi biber malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r016",
+    "title": "Tavuk Patlican sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Patlican ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r017",
+    "title": "Tavuk ve Patlican firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patlican malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r018",
+    "title": "Tavuk Patlican guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Patlican ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r019",
+    "title": "Tavuk Patlican tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patlican malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r020",
+    "title": "Tavuk Patlican izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patlican malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r021",
+    "title": "Tavuk Kabak sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Kabak ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r022",
+    "title": "Tavuk ve Kabak firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kabak malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r023",
+    "title": "Tavuk Kabak guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Kabak ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r024",
+    "title": "Tavuk Kabak tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kabak malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r025",
+    "title": "Tavuk Kabak izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Kabak malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r026",
+    "title": "Tavuk Ispanak sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Ispanak ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r027",
+    "title": "Tavuk ve Ispanak firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Ispanak malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r028",
+    "title": "Tavuk Ispanak guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Ispanak ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r029",
+    "title": "Tavuk Ispanak tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Ispanak malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r030",
+    "title": "Tavuk Ispanak izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Ispanak malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r031",
+    "title": "Tavuk Mantar sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Mantar ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r032",
+    "title": "Tavuk ve Mantar firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Mantar malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r033",
+    "title": "Tavuk Mantar guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Mantar ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r034",
+    "title": "Tavuk Mantar tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Mantar malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r035",
+    "title": "Tavuk Mantar izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Mantar malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r036",
+    "title": "Tavuk Havuc sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Havuc ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r037",
+    "title": "Tavuk ve Havuc firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Havuc malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r038",
+    "title": "Tavuk Havuc guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Havuc ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r039",
+    "title": "Tavuk Havuc tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Havuc malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r040",
+    "title": "Tavuk Havuc izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Havuc malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r041",
+    "title": "Tavuk Patates sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "potato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Patates ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r042",
+    "title": "Tavuk ve Patates firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "potato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patates malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r043",
+    "title": "Tavuk Patates guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "potato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Patates ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r044",
+    "title": "Tavuk Patates tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "potato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patates malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r045",
+    "title": "Tavuk Patates izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "potato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Patates malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r046",
+    "title": "Tavuk Lahana sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cabbage",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Lahana ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r047",
+    "title": "Tavuk ve Lahana firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cabbage",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Lahana malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r048",
+    "title": "Tavuk Lahana guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cabbage",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Lahana ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r049",
+    "title": "Tavuk Lahana tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cabbage",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Lahana malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r050",
+    "title": "Tavuk Lahana izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cabbage",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Lahana malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r051",
+    "title": "Tavuk Brokoli sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "broccoli",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Brokoli ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r052",
+    "title": "Tavuk ve Brokoli firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "broccoli",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Brokoli malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r053",
+    "title": "Tavuk Brokoli guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "broccoli",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Brokoli ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r054",
+    "title": "Tavuk Brokoli tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "broccoli",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Brokoli malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r055",
+    "title": "Tavuk Brokoli izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "broccoli",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Brokoli malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r056",
+    "title": "Tavuk Karnabahar sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cauliflower",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ekle ve renk alana kadar pisir.",
+      "Karnabahar ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r057",
+    "title": "Tavuk ve Karnabahar firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cauliflower",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Karnabahar malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r058",
+    "title": "Tavuk Karnabahar guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cauliflower",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk ve Karnabahar ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r059",
+    "title": "Tavuk Karnabahar tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cauliflower",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Karnabahar malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r060",
+    "title": "Tavuk Karnabahar izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_breast",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "cauliflower",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk ve Karnabahar malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r061",
+    "title": "Tavuk but Domates sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Domates ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r062",
+    "title": "Tavuk but ve Domates firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Domates malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r063",
+    "title": "Tavuk but Domates guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Domates ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r064",
+    "title": "Tavuk but Domates tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Domates malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r065",
+    "title": "Tavuk but Domates izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Domates malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r066",
+    "title": "Tavuk but Yesil biber sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Yesil biber ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r067",
+    "title": "Tavuk but ve Yesil biber firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Yesil biber malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r068",
+    "title": "Tavuk but Yesil biber guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Yesil biber ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r069",
+    "title": "Tavuk but Yesil biber tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Yesil biber malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r070",
+    "title": "Tavuk but Yesil biber izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_green",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Yesil biber malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r071",
+    "title": "Tavuk but Kirmizi biber sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Kirmizi biber ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r072",
+    "title": "Tavuk but ve Kirmizi biber firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kirmizi biber malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r073",
+    "title": "Tavuk but Kirmizi biber guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Kirmizi biber ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r074",
+    "title": "Tavuk but Kirmizi biber tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kirmizi biber malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r075",
+    "title": "Tavuk but Kirmizi biber izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "pepper_red",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kirmizi biber malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r076",
+    "title": "Tavuk but Patlican sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Patlican ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r077",
+    "title": "Tavuk but ve Patlican firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Patlican malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r078",
+    "title": "Tavuk but Patlican guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Patlican ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r079",
+    "title": "Tavuk but Patlican tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Patlican malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r080",
+    "title": "Tavuk but Patlican izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "eggplant",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Patlican malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r081",
+    "title": "Tavuk but Kabak sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Kabak ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r082",
+    "title": "Tavuk but ve Kabak firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kabak malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r083",
+    "title": "Tavuk but Kabak guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Kabak ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r084",
+    "title": "Tavuk but Kabak tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kabak malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r085",
+    "title": "Tavuk but Kabak izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "zucchini",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Kabak malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r086",
+    "title": "Tavuk but Ispanak sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Ispanak ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r087",
+    "title": "Tavuk but ve Ispanak firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Ispanak malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r088",
+    "title": "Tavuk but Ispanak guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Ispanak ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r089",
+    "title": "Tavuk but Ispanak tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Ispanak malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r090",
+    "title": "Tavuk but Ispanak izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "spinach",
+        "quantity": "2",
+        "unit": "cup",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Ispanak malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r091",
+    "title": "Tavuk but Mantar sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Mantar ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r092",
+    "title": "Tavuk but ve Mantar firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Mantar malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r093",
+    "title": "Tavuk but Mantar guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Mantar ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r094",
+    "title": "Tavuk but Mantar tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Mantar malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r095",
+    "title": "Tavuk but Mantar izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "mushroom",
+        "quantity": "200",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Mantar malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r096",
+    "title": "Tavuk but Havuc sote",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 25,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato_paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "paprika",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ekle ve renk alana kadar pisir.",
+      "Havuc ekle, salca ve baharatlari karistir.",
+      "Kisacik kaynatip servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r097",
+    "title": "Tavuk but ve Havuc firinda",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 35,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "lemon",
+        "quantity": "0.5",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Havuc malzemelerini tepsiye al.",
+      "Zeytinyagi ve baharatlarla harmanla.",
+      "Onceden isinmis firinda pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r098",
+    "title": "Tavuk but Havuc guvec",
+    "region_relevance": "BOTH",
+    "servings": 3,
+    "total_time_minutes": 40,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "ingredient_id": "tomato",
+        "quantity": "2",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "oregano",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Sogan ve sarmisagi zeytinyaginda cevir.",
+      "Tavuk but ve Havuc ekle.",
+      "Domates ve baharatlari ekleyip kisik ateste pisir.",
+      "Guvec kabinda servis et."
+    ],
+    "tags": [
+      "dinner",
+      "balanced"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r099",
+    "title": "Tavuk but Havuc tava",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "onion",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "red_pepper_flakes",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Havuc malzemelerini tavada cevir.",
+      "Baharatlari ekleyip kisa sure pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  },
+  {
+    "id": "r100",
+    "title": "Tavuk but Havuc izgara",
+    "region_relevance": "BOTH",
+    "servings": 2,
+    "total_time_minutes": 20,
+    "ingredients": [
+      {
+        "ingredient_id": "chicken_thigh",
+        "quantity": "300",
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "ingredient_id": "carrot",
+        "quantity": "1",
+        "unit": "pc",
+        "optional": false
+      },
+      {
+        "ingredient_id": "olive_oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "black_pepper",
+        "quantity": "0.5",
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "ingredient_id": "thyme",
+        "quantity": "1",
+        "unit": "tsp",
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Tavuk but ve Havuc malzemelerini baharatla.",
+      "Izgarada veya grill tavada pisir.",
+      "Sicak servis et."
+    ],
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "source": "internal"
+  }
+]

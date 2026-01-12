@@ -1,0 +1,44 @@
+[
+  {
+    "ingredient_id":"cheese_kashar",
+    "region":"EU",
+    "substitute_ingredient_id":"cheddar_cheese",
+    "note":"Mild cheddar is the closest widely available substitute."
+  },
+  {
+    "ingredient_id":"strained_yogurt",
+    "region":"EU",
+    "substitute_ingredient_id":"yogurt",
+    "note":"Plain or Greek yogurt works as a substitute."
+  },
+  {
+    "ingredient_id":"sausage_sucuk",
+    "region":"EU",
+    "substitute_ingredient_id":"smoked_sausage",
+    "note":"Use smoked sausage if sucuk is unavailable."
+  },
+  {
+    "ingredient_id":"pastirma",
+    "region":"EU",
+    "substitute_ingredient_id":"smoked_sausage",
+    "note":"Smoked sausage or cured beef can replace pastirma."
+  },
+  {
+    "ingredient_id":"pepper_paste",
+    "region":"EU",
+    "substitute_ingredient_id":"tomato_paste",
+    "note":"Tomato paste is a fallback when pepper paste is not available."
+  },
+  {
+    "ingredient_id":"pita",
+    "region":"EU",
+    "substitute_ingredient_id":"tortilla",
+    "note":"Tortilla can replace pita for wraps and quick breads."
+  },
+  {
+    "ingredient_id":"bulgur",
+    "region":"EU",
+    "substitute_ingredient_id":"rice",
+    "note":"Use rice if bulgur is hard to find."
+  }
+]
