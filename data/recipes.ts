@@ -4,6 +4,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r001",
     "title": "Tavuk Domates sote",
+    "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=500&fit=crop",
     "totalTimeMinutes": 25,
     "servings": 2,
     "ingredients": [
@@ -75,6 +76,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r002",
     "title": "Tavuk ve Domates firinda",
+    "imageUrl": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=500&fit=crop",
     "totalTimeMinutes": 35,
     "servings": 2,
     "ingredients": [
@@ -134,6 +136,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r003",
     "title": "Tavuk Domates guvec",
+    "imageUrl": "https://images.unsplash.com/photo-1633504581786-316c8002b1b2?w=800&h=500&fit=crop",
     "totalTimeMinutes": 40,
     "servings": 3,
     "ingredients": [
@@ -204,6 +207,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r004",
     "title": "Tavuk Domates tava",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -262,6 +266,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r005",
     "title": "Tavuk Domates izgara",
+    "imageUrl": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -315,6 +320,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r006",
     "title": "Tavuk Yesil biber sote",
+    "imageUrl": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&h=500&fit=crop",
     "totalTimeMinutes": 25,
     "servings": 2,
     "ingredients": [
@@ -386,6 +392,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r007",
     "title": "Tavuk ve Yesil biber firinda",
+    "imageUrl": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=500&fit=crop",
     "totalTimeMinutes": 35,
     "servings": 2,
     "ingredients": [
@@ -445,6 +452,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r008",
     "title": "Tavuk Yesil biber guvec",
+    "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=500&fit=crop",
     "totalTimeMinutes": 40,
     "servings": 3,
     "ingredients": [
@@ -515,6 +523,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r009",
     "title": "Tavuk Yesil biber tava",
+    "imageUrl": "https://images.unsplash.com/photo-1633504581786-316c8002b1b2?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -573,6 +582,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r010",
     "title": "Tavuk Yesil biber izgara",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -626,6 +636,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r011",
     "title": "Tavuk Kirmizi biber sote",
+    "imageUrl": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&h=500&fit=crop",
     "totalTimeMinutes": 25,
     "servings": 2,
     "ingredients": [
@@ -697,6 +708,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r012",
     "title": "Tavuk ve Kirmizi biber firinda",
+    "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=500&fit=crop",
     "totalTimeMinutes": 35,
     "servings": 2,
     "ingredients": [
@@ -756,6 +768,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r013",
     "title": "Tavuk Kirmizi biber guvec",
+    "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&h=500&fit=crop",
     "totalTimeMinutes": 40,
     "servings": 3,
     "ingredients": [
@@ -826,6 +839,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r014",
     "title": "Tavuk Kirmizi biber tava",
+    "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -884,6 +898,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r015",
     "title": "Tavuk Kirmizi biber izgara",
+    "imageUrl": "https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -937,6 +952,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r016",
     "title": "Tavuk Patlican sote",
+    "imageUrl": "https://images.unsplash.com/photo-1580217593608-61931cefc821?w=800&h=500&fit=crop",
     "totalTimeMinutes": 25,
     "servings": 2,
     "ingredients": [
@@ -1008,6 +1024,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r017",
     "title": "Tavuk ve Patlican firinda",
+    "imageUrl": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800&h=500&fit=crop",
     "totalTimeMinutes": 35,
     "servings": 2,
     "ingredients": [
@@ -1067,6 +1084,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r018",
     "title": "Tavuk Patlican guvec",
+    "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=800&h=500&fit=crop",
     "totalTimeMinutes": 40,
     "servings": 3,
     "ingredients": [
@@ -1137,6 +1155,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r019",
     "title": "Tavuk Patlican tava",
+    "imageUrl": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [
@@ -1195,6 +1214,7 @@ export const recipes: Recipe[] = [
   {
     "id": "r020",
     "title": "Tavuk Patlican izgara",
+    "imageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=500&fit=crop",
     "totalTimeMinutes": 20,
     "servings": 2,
     "ingredients": [

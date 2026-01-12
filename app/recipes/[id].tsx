@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { StyleSheet, View, Image, ScrollView, Pressable } from 'react-native';
-import { BlurView } from 'expo-blur';
 import { useState } from 'react';
 
 import { GlassCard } from '@/components/GlassCard';
@@ -10,13 +9,10 @@ import { Text } from '@/components/Themed';
 import { fetchRecipeById } from '@/lib/recipesApi';
 import { scoreRecipe } from '@/lib/scoring';
 import { usePantryStore } from '@/store/pantryStore';
-import { useColorScheme } from '@/components/useColorScheme';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const pantryItems = usePantryStore((state) => state.items);
-  const colorScheme = useColorScheme();
-  const tint = colorScheme === 'dark' ? 'dark' : 'light';
   const [portions, setPortions] = useState(1);
   const [activeTab, setActiveTab] = useState<'ingredients' | 'cooking'>('ingredients');
 
@@ -43,18 +39,27 @@ export default function RecipeDetailScreen() {
   }
 
   const scoreInfo = scoreRecipe(pantryItems, recipe);
-  const imageUrl = `https://images.unsplash.com/photo-${getPhotoIdByRecipe(recipe.id)}?w=800&h=500&fit=crop`;
+  const imageUrl = recipe.imageUrl;
   const scoreColor = scoreInfo.score >= 75 ? '#22c55e' : scoreInfo.score >= 50 ? '#f97316' : '#ef4444';
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Hero Image Section */}
       <View style={styles.heroContainer}>
-        <Image
-          source={{ uri: imageUrl }}
-          style={styles.heroImage}
-        />
-        <BlurView intensity={40} tint={tint} style={styles.heroOverlay} />
+        {imageUrl ? (
+          <Image
+            source={{ uri: imageUrl }}
+            style={styles.heroImage}
+          />
+        ) : (
+          <Image
+            source={require('@/assets/images/placeholder.png')}
+            style={styles.heroImage}
+          />
+        )}
+
+        {/* Dark overlay for text readability */}
+        <View style={styles.heroOverlay} />
 
         {/* Title and Score Overlay */}
         <View style={styles.heroContent}>
@@ -213,20 +218,6 @@ export default function RecipeDetailScreen() {
   );
 }
 
-function getPhotoIdByRecipe(recipeId: string): string {
-  const photoIds = [
-    '1546069901-e90e7e6d90a7',
-    '1495112579519-330ec06b1cb5',
-    '1546069901-e90e7e6d90a7',
-    '1571407970349-1e4b842fd9d9',
-    '1495112579519-6f10c9dde8b9',
-    '1546069901-08fa151a7738',
-    '1495112579519-6f10c9dde8b9',
-  ];
-  const index = parseInt(recipeId.slice(0, 8), 16) % photoIds.length;
-  return photoIds[index];
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -244,6 +235,7 @@ const styles = StyleSheet.create({
   },
   heroOverlay: {
     ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
   heroContent: {
     ...StyleSheet.absoluteFillObject,
@@ -305,7 +297,7 @@ const styles = StyleSheet.create({
   },
   infoCard: {
     flex: 1,
-    backgroundColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: 'rgba(255,255,255,0.3)',
     borderRadius: 12,
     padding: 12,
     alignItems: 'center',

@@ -1,6 +1,5 @@
 import { ScrollView, StyleSheet, View, Pressable } from 'react-native';
 import { Text } from '@/components/Themed';
-import { useColorScheme } from '@/components/useColorScheme';
 import Colors from '@/constants/Colors';
 
 export type IngredientItem = {
@@ -22,8 +21,7 @@ export function IngredientsSelector({
   onSelect,
   onDeselect,
 }: IngredientsSelectorProps) {
-  const colorScheme = useColorScheme();
-  const textColor = Colors[colorScheme ?? 'light'].text;
+  const textColor = Colors.light.text;
 
   const toggleIngredient = (id: string) => {
     if (selectedIds.has(id)) {

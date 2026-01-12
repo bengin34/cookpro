@@ -10,6 +10,7 @@ import {
   Platform,
   UIManager,
   ScrollView,
+  KeyboardAvoidingView,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
@@ -17,7 +18,6 @@ import * as Haptics from 'expo-haptics';
 import { Text } from '@/components/Themed';
 import { usePantryStore } from '@/store/pantryStore';
 import { usePreferencesStore } from '@/store/preferencesStore';
-import { useColorScheme } from '@/components/useColorScheme';
 import Colors from '@/constants/Colors';
 import { PantryItem } from '@/lib/types';
 
@@ -83,18 +83,64 @@ const allergenOptions = ['Dairy', 'Gluten', 'Nuts', 'Shellfish', 'Eggs', 'Soy', 
 const dietOptions = ['Vegetarian', 'Vegan', 'Keto', 'Paleo'];
 
 const quickAddSuggestions = [
+  // Dairy & Eggs
   { id: 'milk', name: 'Milk', emoji: '🥛' },
   { id: 'eggs', name: 'Eggs', emoji: '🥚' },
   { id: 'cheese', name: 'Cheese', emoji: '🧀' },
   { id: 'butter', name: 'Butter', emoji: '🧈' },
-  { id: 'chicken', name: 'Chicken', emoji: '🍗' },
-  { id: 'rice', name: 'Rice', emoji: '🍚' },
-  { id: 'pasta', name: 'Pasta', emoji: '🍝' },
-  { id: 'bread', name: 'Bread', emoji: '🍞' },
+  { id: 'yogurt', name: 'Yogurt', emoji: '🥛' },
+  { id: 'cream', name: 'Cream', emoji: '🍶' },
+  // Vegetables
   { id: 'tomato', name: 'Tomato', emoji: '🍅' },
   { id: 'onion', name: 'Onion', emoji: '🧅' },
   { id: 'garlic', name: 'Garlic', emoji: '🧄' },
+  { id: 'carrot', name: 'Carrot', emoji: '🥕' },
+  { id: 'potato', name: 'Potato', emoji: '🥔' },
+  { id: 'lettuce', name: 'Lettuce', emoji: '🥬' },
+  { id: 'cucumber', name: 'Cucumber', emoji: '🥒' },
+  { id: 'pepper', name: 'Pepper', emoji: '🌶️' },
+  { id: 'broccoli', name: 'Broccoli', emoji: '🥦' },
+  { id: 'spinach', name: 'Spinach', emoji: '🥬' },
+  { id: 'zucchini', name: 'Zucchini', emoji: '🥒' },
+  { id: 'eggplant', name: 'Eggplant', emoji: '🍆' },
+  { id: 'mushroom', name: 'Mushroom', emoji: '🍄' },
+  // Proteins
+  { id: 'chicken', name: 'Chicken', emoji: '🍗' },
+  { id: 'beef', name: 'Beef', emoji: '🥩' },
+  { id: 'pork', name: 'Pork', emoji: '🐷' },
+  { id: 'fish', name: 'Fish', emoji: '🐟' },
+  { id: 'salmon', name: 'Salmon', emoji: '🍣' },
+  { id: 'shrimp', name: 'Shrimp', emoji: '🦐' },
+  { id: 'tofu', name: 'Tofu', emoji: '🥡' },
+  { id: 'beans', name: 'Beans', emoji: '🫘' },
+  { id: 'lentils', name: 'Lentils', emoji: '🫘' },
+  // Fruits
+  { id: 'apple', name: 'Apple', emoji: '🍎' },
+  { id: 'banana', name: 'Banana', emoji: '🍌' },
+  { id: 'orange', name: 'Orange', emoji: '🍊' },
+  { id: 'lemon', name: 'Lemon', emoji: '🍋' },
+  { id: 'strawberry', name: 'Strawberry', emoji: '🍓' },
+  { id: 'blueberry', name: 'Blueberry', emoji: '🫐' },
+  { id: 'grape', name: 'Grape', emoji: '🍇' },
+  { id: 'watermelon', name: 'Watermelon', emoji: '🍉' },
+  { id: 'avocado', name: 'Avocado', emoji: '🥑' },
+  // Grains
+  { id: 'rice', name: 'Rice', emoji: '🍚' },
+  { id: 'pasta', name: 'Pasta', emoji: '🍝' },
+  { id: 'bread', name: 'Bread', emoji: '🍞' },
+  { id: 'flour', name: 'Flour', emoji: '🌾' },
+  { id: 'oats', name: 'Oats', emoji: '🥣' },
+  { id: 'quinoa', name: 'Quinoa', emoji: '🌾' },
+  { id: 'cereal', name: 'Cereal', emoji: '🥣' },
+  // Pantry Staples
   { id: 'olive oil', name: 'Olive Oil', emoji: '🫒' },
+  { id: 'salt', name: 'Salt', emoji: '🧂' },
+  { id: 'sugar', name: 'Sugar', emoji: '🍬' },
+  { id: 'honey', name: 'Honey', emoji: '🍯' },
+  { id: 'soy sauce', name: 'Soy Sauce', emoji: '🥫' },
+  { id: 'vinegar', name: 'Vinegar', emoji: '🫙' },
+  { id: 'spices', name: 'Spices', emoji: '🌶️' },
+  { id: 'nuts', name: 'Nuts', emoji: '🥜' },
 ];
 
 const getDaysUntilExpiry = (expiresAt?: string): number | null => {
@@ -115,9 +161,7 @@ const getExpiryStatus = (days: number | null): 'expired' | 'urgent' | 'soon' | '
 };
 
 export default function PantryScreen() {
-  const colorScheme = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const colors = Colors[colorScheme ?? 'light'];
+  const colors = Colors['light'];
   const insets = useSafeAreaInsets();
 
   const items = usePantryStore((state) => state.items);
@@ -237,7 +281,7 @@ export default function PantryScreen() {
     return (
       <View key={item.id} style={styles.itemRow}>
         <View style={styles.itemLeft}>
-          <View style={[styles.itemEmoji, isDark && styles.itemEmojiDark]}>
+          <View style={styles.itemEmoji}>
             <Text style={styles.itemEmojiText}>{emoji}</Text>
           </View>
           <View style={styles.itemInfo}>
@@ -292,7 +336,7 @@ export default function PantryScreen() {
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       {/* Background gradient effect */}
-      <View style={[styles.backgroundGradient, isDark && styles.backgroundGradientDark]} />
+      <View style={styles.backgroundGradient} />
 
       {/* Header */}
       <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
@@ -304,7 +348,6 @@ export default function PantryScreen() {
           onPress={() => setPrefsModalVisible(true)}
           style={({ pressed }) => [
             styles.settingsButton,
-            isDark && styles.settingsButtonDark,
             pressed && styles.settingsButtonPressed,
           ]}>
           <Text style={styles.settingsIcon}>⚙️</Text>
@@ -313,17 +356,17 @@ export default function PantryScreen() {
 
       {/* Stats Row */}
       <View style={styles.statsRow}>
-        <View style={[styles.statCard, isDark && styles.statCardDark]}>
+        <View style={styles.statCard}>
           <Text style={[styles.statNumber, { color: colors.tint }]}>{items.length}</Text>
           <Text style={[styles.statLabel, { color: colors.secondaryText }]}>Items</Text>
         </View>
-        <View style={[styles.statCard, isDark && styles.statCardDark]}>
+        <View style={styles.statCard}>
           <Text style={[styles.statNumber, { color: expiringItems.length > 0 ? '#f59e0b' : colors.tint }]}>
             {expiringItems.length}
           </Text>
           <Text style={[styles.statLabel, { color: colors.secondaryText }]}>Expiring Soon</Text>
         </View>
-        <View style={[styles.statCard, isDark && styles.statCardDark]}>
+        <View style={styles.statCard}>
           <Text style={[styles.statNumber, { color: colors.tint }]}>{nonEmptyCategories.length}</Text>
           <Text style={[styles.statLabel, { color: colors.secondaryText }]}>Categories</Text>
         </View>
@@ -339,8 +382,11 @@ export default function PantryScreen() {
             <Text style={[styles.customAddText, { color: colors.tint }]}>+ Custom</Text>
           </Pressable>
         </View>
-        <View style={styles.quickAddGrid}>
-          {quickAddSuggestions.slice(0, 8).map((suggestion) => {
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.quickAddScroll}>
+          {quickAddSuggestions.map((suggestion) => {
             const isInPantry = items.some(
               (item) => item.name.toLowerCase() === suggestion.id.toLowerCase()
             );
@@ -350,7 +396,6 @@ export default function PantryScreen() {
                 onPress={() => !isInPantry && handleQuickAdd(suggestion.name)}
                 style={({ pressed }) => [
                   styles.quickAddChip,
-                  isDark && styles.quickAddChipDark,
                   isInPantry && styles.quickAddChipAdded,
                   pressed && !isInPantry && styles.quickAddChipPressed,
                 ]}>
@@ -367,7 +412,7 @@ export default function PantryScreen() {
               </Pressable>
             );
           })}
-        </View>
+        </ScrollView>
       </View>
 
       {/* Main Content - Category List */}
@@ -397,7 +442,6 @@ export default function PantryScreen() {
                     onPress={() => toggleCategory(categoryKey)}
                     style={({ pressed }) => [
                       styles.categoryHeader,
-                      isDark && styles.categoryHeaderDark,
                       pressed && styles.categoryHeaderPressed,
                     ]}>
                     <View style={styles.categoryLeft}>
@@ -419,7 +463,7 @@ export default function PantryScreen() {
                   </Pressable>
 
                   {isExpanded && (
-                    <View style={[styles.categoryItems, isDark && styles.categoryItemsDark]}>
+                    <View style={styles.categoryItems}>
                       {categoryItems.map(renderPantryItem)}
                     </View>
                   )}
@@ -444,47 +488,58 @@ export default function PantryScreen() {
       </View>
 
       {/* Add Modal */}
-      <Modal visible={addModalVisible} animationType="slide" transparent>
-        <View style={styles.modalOverlay}>
-          <Pressable style={styles.modalBackdrop} onPress={() => setAddModalVisible(false)} />
-          <View style={[styles.modalContent, isDark && styles.modalContentDark]}>
-            <View style={styles.modalHandle} />
-            <Text style={[styles.modalTitle, { color: colors.text }]}>Add Ingredient</Text>
-            <TextInput
-              value={nameInput}
-              onChangeText={setNameInput}
-              placeholder="Enter ingredient name..."
-              placeholderTextColor={colors.secondaryText}
-              style={[styles.modalInput, isDark && styles.modalInputDark, { color: colors.text }]}
-              autoFocus
-              onSubmitEditing={handleAddCustom}
-              returnKeyType="done"
-            />
-            <View style={styles.modalActions}>
-              <Pressable
-                onPress={() => setAddModalVisible(false)}
-                style={({ pressed }) => [styles.modalCancelButton, pressed && { opacity: 0.7 }]}>
-                <Text style={[styles.modalCancelText, { color: colors.secondaryText }]}>Cancel</Text>
-              </Pressable>
-              <Pressable
-                onPress={handleAddCustom}
-                style={({ pressed }) => [
-                  styles.modalAddButton,
-                  pressed && styles.modalAddButtonPressed,
-                  !nameInput.trim() && styles.modalAddButtonDisabled,
-                ]}>
-                <Text style={styles.modalAddText}>Add to Pantry</Text>
-              </Pressable>
-            </View>
-          </View>
-        </View>
+      <Modal
+        visible={addModalVisible}
+        animationType="slide"
+        transparent
+        statusBarTranslucent>
+        <KeyboardAvoidingView
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          style={{ flex: 1 }}>
+          <Pressable style={styles.modalOverlay} onPress={() => setAddModalVisible(false)}>
+            <Pressable style={styles.modalContent} onPress={(e) => e.stopPropagation()}>
+              <View style={styles.modalHandle} />
+              <Text style={[styles.modalTitle, { color: colors.text }]}>Add Ingredient</Text>
+              <TextInput
+                value={nameInput}
+                onChangeText={setNameInput}
+                placeholder="Enter ingredient name..."
+                placeholderTextColor={colors.secondaryText}
+                style={[styles.modalInput, { color: colors.text, backgroundColor: '#fff' }]}
+                autoFocus
+                onSubmitEditing={handleAddCustom}
+                returnKeyType="done"
+              />
+              <View style={styles.modalActions}>
+                <Pressable
+                  onPress={() => setAddModalVisible(false)}
+                  style={({ pressed }) => [styles.modalCancelButton, pressed && { opacity: 0.7 }]}>
+                  <Text style={[styles.modalCancelText, { color: colors.secondaryText }]}>Cancel</Text>
+                </Pressable>
+                <Pressable
+                  onPress={handleAddCustom}
+                  disabled={!nameInput.trim()}
+                  style={({ pressed }) => [
+                    styles.modalAddButton,
+                    pressed && styles.modalAddButtonPressed,
+                    !nameInput.trim() && styles.modalAddButtonDisabled,
+                  ]}>
+                  <Text style={styles.modalAddText}>Add to Pantry</Text>
+                </Pressable>
+              </View>
+            </Pressable>
+          </Pressable>
+        </KeyboardAvoidingView>
       </Modal>
 
       {/* Preferences Modal */}
-      <Modal visible={prefsModalVisible} animationType="slide" transparent>
-        <View style={styles.modalOverlay}>
-          <Pressable style={styles.modalBackdrop} onPress={() => setPrefsModalVisible(false)} />
-          <View style={[styles.modalContent, styles.modalContentLarge, isDark && styles.modalContentDark]}>
+      <Modal
+        visible={prefsModalVisible}
+        animationType="slide"
+        transparent
+        statusBarTranslucent>
+        <Pressable style={styles.modalOverlay} onPress={() => setPrefsModalVisible(false)}>
+          <Pressable style={[styles.modalContent, styles.modalContentLarge]} onPress={(e) => e.stopPropagation()}>
             <View style={styles.modalHandle} />
             <View style={styles.modalHeader}>
               <Text style={[styles.modalTitle, { color: colors.text }]}>Preferences</Text>
@@ -493,67 +548,67 @@ export default function PantryScreen() {
               </Pressable>
             </View>
 
-            <View style={styles.prefsSection}>
-              <Text style={[styles.prefsSectionTitle, { color: colors.text }]}>Allergens</Text>
-              <Text style={[styles.prefsSectionSubtitle, { color: colors.secondaryText }]}>
-                We'll exclude recipes with these ingredients
-              </Text>
-              <View style={styles.prefsChipContainer}>
-                {allergenOptions.map((allergen) => {
-                  const isSelected = preferences.allergies.includes(allergen.toLowerCase());
-                  return (
-                    <Pressable
-                      key={allergen}
-                      style={[
-                        styles.prefsChip,
-                        isDark && styles.prefsChipDark,
-                        isSelected && styles.prefsChipSelected,
-                      ]}
-                      onPress={() => toggleAllergen(allergen)}>
-                      <Text
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <View style={styles.prefsSection}>
+                <Text style={[styles.prefsSectionTitle, { color: colors.text }]}>Allergens</Text>
+                <Text style={[styles.prefsSectionSubtitle, { color: colors.secondaryText }]}>
+                  We'll exclude recipes with these ingredients
+                </Text>
+                <View style={styles.prefsChipContainer}>
+                  {allergenOptions.map((allergen) => {
+                    const isSelected = preferences.allergies.includes(allergen.toLowerCase());
+                    return (
+                      <Pressable
+                        key={allergen}
                         style={[
-                          styles.prefsChipText,
-                          { color: isSelected ? '#fff' : colors.text },
-                        ]}>
-                        {allergen}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
+                          styles.prefsChip,
+                          isSelected && styles.prefsChipSelected,
+                        ]}
+                        onPress={() => toggleAllergen(allergen)}>
+                        <Text
+                          style={[
+                            styles.prefsChipText,
+                            { color: isSelected ? '#fff' : colors.text },
+                          ]}>
+                          {allergen}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
               </View>
-            </View>
 
-            <View style={styles.prefsSection}>
-              <Text style={[styles.prefsSectionTitle, { color: colors.text }]}>Diet</Text>
-              <Text style={[styles.prefsSectionSubtitle, { color: colors.secondaryText }]}>
-                Show recipes matching your dietary preferences
-              </Text>
-              <View style={styles.prefsChipContainer}>
-                {dietOptions.map((diet) => {
-                  const isSelected = preferences.diets.includes(diet.toLowerCase());
-                  return (
-                    <Pressable
-                      key={diet}
-                      style={[
-                        styles.prefsChip,
-                        isDark && styles.prefsChipDark,
-                        isSelected && styles.prefsChipSelected,
-                      ]}
-                      onPress={() => toggleDiet(diet)}>
-                      <Text
+              <View style={styles.prefsSection}>
+                <Text style={[styles.prefsSectionTitle, { color: colors.text }]}>Diet</Text>
+                <Text style={[styles.prefsSectionSubtitle, { color: colors.secondaryText }]}>
+                  Show recipes matching your dietary preferences
+                </Text>
+                <View style={styles.prefsChipContainer}>
+                  {dietOptions.map((diet) => {
+                    const isSelected = preferences.diets.includes(diet.toLowerCase());
+                    return (
+                      <Pressable
+                        key={diet}
                         style={[
-                          styles.prefsChipText,
-                          { color: isSelected ? '#fff' : colors.text },
-                        ]}>
-                        {diet}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
+                          styles.prefsChip,
+                          isSelected && styles.prefsChipSelected,
+                        ]}
+                        onPress={() => toggleDiet(diet)}>
+                        <Text
+                          style={[
+                            styles.prefsChipText,
+                            { color: isSelected ? '#fff' : colors.text },
+                          ]}>
+                          {diet}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
               </View>
-            </View>
-          </View>
-        </View>
+            </ScrollView>
+          </Pressable>
+        </Pressable>
       </Modal>
     </View>
   );
@@ -571,9 +626,6 @@ const styles = StyleSheet.create({
     height: 300,
     backgroundColor: 'rgba(226, 88, 34, 0.05)',
   },
-  backgroundGradientDark: {
-    backgroundColor: 'rgba(226, 88, 34, 0.08)',
-  },
 
   // Header
   header: {
@@ -581,15 +633,15 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     paddingHorizontal: 20,
-    paddingBottom: 16,
+    paddingBottom: 12,
   },
   greeting: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '500',
-    marginBottom: 4,
+    marginBottom: 2,
   },
   title: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: '700',
     letterSpacing: -0.5,
   },
@@ -600,9 +652,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.05)',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  settingsButtonDark: {
-    backgroundColor: 'rgba(255,255,255,0.1)',
   },
   settingsButtonPressed: {
     opacity: 0.7,
@@ -615,26 +664,23 @@ const styles = StyleSheet.create({
   statsRow: {
     flexDirection: 'row',
     paddingHorizontal: 20,
-    gap: 12,
-    marginBottom: 24,
+    gap: 10,
+    marginBottom: 16,
   },
   statCard: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.03)',
-    borderRadius: 16,
-    padding: 16,
+    borderRadius: 12,
+    padding: 12,
     alignItems: 'center',
   },
-  statCardDark: {
-    backgroundColor: 'rgba(255,255,255,0.06)',
-  },
   statNumber: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '700',
-    marginBottom: 4,
+    marginBottom: 2,
   },
   statLabel: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: '500',
     textTransform: 'uppercase',
     letterSpacing: 0.5,
@@ -643,7 +689,7 @@ const styles = StyleSheet.create({
   // Quick Add
   quickAddSection: {
     paddingHorizontal: 20,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   sectionHeader: {
     flexDirection: 'row',
@@ -663,10 +709,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
   },
-  quickAddGrid: {
+  quickAddScroll: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
     gap: 8,
+    paddingRight: 20,
   },
   quickAddChip: {
     flexDirection: 'row',
@@ -678,9 +724,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.04)',
     borderWidth: 1,
     borderColor: 'transparent',
-  },
-  quickAddChipDark: {
-    backgroundColor: 'rgba(255,255,255,0.08)',
   },
   quickAddChipAdded: {
     backgroundColor: 'rgba(74, 222, 128, 0.15)',
@@ -746,9 +789,6 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     backgroundColor: 'rgba(0,0,0,0.03)',
   },
-  categoryHeaderDark: {
-    backgroundColor: 'rgba(255,255,255,0.06)',
-  },
   categoryHeaderPressed: {
     opacity: 0.8,
   },
@@ -795,9 +835,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.02)',
     borderRadius: 12,
   },
-  categoryItemsDark: {
-    backgroundColor: 'rgba(255,255,255,0.04)',
-  },
 
   // Items
   itemRow: {
@@ -821,9 +858,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.04)',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  itemEmojiDark: {
-    backgroundColor: 'rgba(255,255,255,0.1)',
   },
   itemEmojiText: {
     fontSize: 18,
@@ -912,10 +946,7 @@ const styles = StyleSheet.create({
   modalOverlay: {
     flex: 1,
     justifyContent: 'flex-end',
-  },
-  modalBackdrop: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0,0,0,0.4)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
   modalContent: {
     backgroundColor: '#fff',
@@ -923,9 +954,6 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 24,
     padding: 24,
     paddingTop: 12,
-  },
-  modalContentDark: {
-    backgroundColor: '#1c1917',
   },
   modalContentLarge: {
     maxHeight: '70%',
@@ -959,12 +987,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 16,
     fontSize: 16,
-    backgroundColor: 'rgba(0,0,0,0.03)',
     marginBottom: 20,
-  },
-  modalInputDark: {
-    borderColor: 'rgba(255,255,255,0.1)',
-    backgroundColor: 'rgba(255,255,255,0.06)',
   },
   modalActions: {
     flexDirection: 'row',
@@ -1025,9 +1048,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.05)',
     borderWidth: 1,
     borderColor: 'transparent',
-  },
-  prefsChipDark: {
-    backgroundColor: 'rgba(255,255,255,0.08)',
   },
   prefsChipSelected: {
     backgroundColor: '#e25822',

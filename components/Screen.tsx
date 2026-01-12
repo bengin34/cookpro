@@ -4,7 +4,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ScreenBackground } from './ScreenBackground';
 import Colors from '@/constants/Colors';
-import { useColorScheme } from '@/components/useColorScheme';
 
 type ScreenProps = {
   children: ReactNode;
@@ -13,8 +12,7 @@ type ScreenProps = {
 };
 
 export function Screen({ children, style, contentStyle }: ScreenProps) {
-  const colorScheme = useColorScheme();
-  const backgroundColor = Colors[colorScheme ?? 'light'].background;
+  const backgroundColor = Colors.light.background;
   const insets = useSafeAreaInsets();
 
   return (

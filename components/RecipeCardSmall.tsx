@@ -1,11 +1,9 @@
 import { StyleSheet, View, Image, Pressable } from 'react-native';
 import { useState } from 'react';
 import { Link } from 'expo-router';
-import { BlurView } from 'expo-blur';
 
 import { Text } from '@/components/Themed';
 import { Recipe } from '@/lib/types';
-import { useColorScheme } from '@/components/useColorScheme';
 
 const CARD_WIDTH = 160;
 
@@ -16,13 +14,9 @@ type RecipeCardSmallProps = {
 };
 
 export function RecipeCardSmall({ recipe, score, missingCount }: RecipeCardSmallProps) {
-  const colorScheme = useColorScheme();
-  const tint = colorScheme === 'dark' ? 'dark' : 'light';
   const [imageError, setImageError] = useState(false);
 
-  const imageUrl = !imageError
-    ? `https://images.unsplash.com/photo-${getPhotoIdByRecipe(recipe.id)}?w=300&h=300&fit=crop&q=80`
-    : undefined;
+  const imageUrl = !imageError && recipe.imageUrl ? recipe.imageUrl : undefined;
 
   return (
     <Link href={`/recipes/${recipe.id}`} asChild>
@@ -40,7 +34,6 @@ export function RecipeCardSmall({ recipe, score, missingCount }: RecipeCardSmall
               style={styles.image}
             />
           )}
-          <BlurView intensity={20} tint={tint} style={styles.overlay} />
 
           {/* Score Badge */}
           <View style={[styles.scoreBadge, getScoreStyle(score)]}>
@@ -67,20 +60,6 @@ export function RecipeCardSmall({ recipe, score, missingCount }: RecipeCardSmall
   );
 }
 
-function getPhotoIdByRecipe(recipeId: string): string {
-  const photoIds = [
-    '1546069901-e90e7e6d90a7',
-    '1495112579519-330ec06b1cb5',
-    '1546069901-e90e7e6d90a7',
-    '1571407970349-1e4b842fd9d9',
-    '1495112579519-6f10c9dde8b9',
-    '1546069901-08fa151a7738',
-    '1495112579519-6f10c9dde8b9',
-  ];
-  const index = parseInt(recipeId.slice(0, 8), 16) % photoIds.length;
-  return photoIds[index];
-}
-
 function getScoreStyle(score: number) {
   if (score >= 75) return styles.scoreHigh;
   if (score >= 50) return styles.scoreMedium;
@@ -104,9 +83,6 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
-  },
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
   },
   scoreBadge: {
     position: 'absolute',

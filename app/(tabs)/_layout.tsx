@@ -6,7 +6,6 @@ import { StyleSheet, Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
-import { useColorScheme } from '@/components/useColorScheme';
 import Colors from '@/constants/Colors';
 
 function TabBarIcon(props: {
@@ -24,30 +23,24 @@ function TabBarIcon(props: {
 }
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
   const insets = useSafeAreaInsets();
-  const isDark = colorScheme === 'dark';
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: isDark ? Colors.dark.tint : Colors.light.tint,
-        tabBarInactiveTintColor: isDark ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.35)',
+        tabBarActiveTintColor: Colors.light.tint,
+        tabBarInactiveTintColor: 'rgba(0,0,0,0.35)',
         headerShown: useClientOnlyValue(false, true),
         tabBarStyle: {
           ...styles.tabBar,
           paddingBottom: Math.max(insets.bottom, 8),
           height: 60 + Math.max(insets.bottom, 8),
-          backgroundColor: isDark
-            ? 'rgba(20,20,20,0.85)'
-            : 'rgba(255,255,255,0.85)',
-          borderTopColor: isDark
-            ? 'rgba(255,255,255,0.1)'
-            : 'rgba(0,0,0,0.08)',
+          backgroundColor: 'rgba(255,255,255,0.85)',
+          borderTopColor: 'rgba(0,0,0,0.08)',
         },
         tabBarBackground: () => (
           <BlurView
-            tint={isDark ? 'dark' : 'light'}
+            tint="light"
             intensity={90}
             style={styles.tabBarBlur}
           />
@@ -65,6 +58,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Pantry',
+          headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'basket' : 'basket-outline'}

@@ -7,20 +7,6 @@ import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { useCookbookStore } from '@/store/cookbookStore';
 
-function getPhotoIdByRecipe(recipeId: string): string {
-  const photoIds = [
-    '1546069901-e90e7e6d90a7',
-    '1495112579519-330ec06b1cb5',
-    '1546069901-e90e7e6d90a7',
-    '1571407970349-1e4b842fd9d9',
-    '1495112579519-6f10c9dde8b9',
-    '1546069901-08fa151a7738',
-    '1495112579519-6f10c9dde8b9',
-  ];
-  const index = parseInt(recipeId.slice(0, 8), 16) % photoIds.length;
-  return photoIds[index];
-}
-
 export default function CookbookScreen() {
   const { savedRecipes, toggleFavorite, getAllTags, getRecipesByTag } = useCookbookStore();
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -39,7 +25,7 @@ export default function CookbookScreen() {
         <GlassCard>
           <Text style={styles.cardTitle}>Tarif import</Text>
           <Text style={styles.cardBody}>URL yapistir, tarifini ekle.</Text>
-          <Link href="/modal">
+          <Link href="/dialogs/recipe-import">
             <Text style={styles.link}>URL ile import</Text>
           </Link>
         </GlassCard>
@@ -79,18 +65,23 @@ export default function CookbookScreen() {
             </GlassCard>
 
             {filteredRecipes.map((recipe) => {
-              const imageUrl = `https://images.unsplash.com/photo-${getPhotoIdByRecipe(recipe.id)}?w=400&h=250&fit=crop`;
-
               return (
                 <Link key={recipe.id} href={`/recipes/${recipe.id}`} asChild>
                   <Pressable>
                     <View style={styles.recipeCardContainer}>
                       {/* Recipe Image */}
                       <View style={styles.recipeImageWrapper}>
-                        <Image
-                          source={{ uri: imageUrl }}
-                          style={styles.recipeImage}
-                        />
+                        {recipe.imageUrl ? (
+                          <Image
+                            source={{ uri: recipe.imageUrl }}
+                            style={styles.recipeImage}
+                          />
+                        ) : (
+                          <Image
+                            source={require('@/assets/images/placeholder.png')}
+                            style={styles.recipeImage}
+                          />
+                        )}
                         {/* Favorite Badge */}
                         <Pressable
                           style={styles.favoriteBadge}

@@ -64,10 +64,39 @@ function RootLayoutNav() {
         <Stack>
           <Stack.Screen name="onboarding" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="recipes/[id]" options={{ title: 'Recipe' }} />
-          <Stack.Screen name="recipes/[id]/cook" options={{ title: 'Cooking Mode' }} />
-          <Stack.Screen name="shopping-list" options={{ title: 'Shopping List' }} />
-          <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+          <Stack.Screen
+            name="recipes/[id]"
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="recipes/[id]/cook"
+            options={{
+              headerShown: true,
+              title: '',
+              headerBackTitle: '',
+              headerTintColor: '#e25822',
+              headerShadowVisible: false,
+              headerStyle: {
+                backgroundColor: '#ffffff',
+              }
+            }}
+          />
+          <Stack.Screen
+            name="shopping-list"
+            options={{
+              headerShown: true,
+              title: '',
+              headerBackTitle: '',
+              headerTintColor: '#e25822',
+              headerShadowVisible: false,
+              headerStyle: {
+                backgroundColor: '#ffffff',
+              }
+            }}
+          />
+          <Stack.Screen name="dialogs" options={{ headerShown: false }} />
         </Stack>
       </ThemeProvider>
     </QueryClientProvider>

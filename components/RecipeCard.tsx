@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { StyleSheet, View, Image, Dimensions } from 'react-native';
 import { Link } from 'expo-router';
-import { BlurView } from 'expo-blur';
 
 import { Text } from '@/components/Themed';
 import { Recipe } from '@/lib/types';
-import { useColorScheme } from '@/components/useColorScheme';
 
 const CARD_WIDTH = Dimensions.get('window').width - 48; // Minus padding
 
@@ -16,14 +14,10 @@ type RecipeCardProps = {
 };
 
 export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
-  const colorScheme = useColorScheme();
-  const tint = colorScheme === 'dark' ? 'dark' : 'light';
   const [imageError, setImageError] = useState(false);
 
-  // Generate image URL - use Unsplash or fallback
-  const imageUrl = !imageError
-    ? `https://images.unsplash.com/photo-${getPhotoIdByRecipe(recipe.id)}?w=500&h=300&fit=crop&q=80`
-    : undefined;
+  // Use recipe's image URL if available, otherwise fallback to placeholder
+  const imageUrl = !imageError && recipe.imageUrl ? recipe.imageUrl : undefined;
 
   return (
     <Link href={`/recipes/${recipe.id}`} asChild>
@@ -42,7 +36,6 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
               style={styles.image}
             />
           )}
-          <BlurView intensity={40} tint={tint} style={styles.overlay} />
 
           {/* Difficulty Badge */}
           <View style={styles.difficultyBadge}>
@@ -102,21 +95,6 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
   );
 }
 
-function getPhotoIdByRecipe(recipeId: string): string {
-  // Deterministic photo selection based on recipe id
-  const photoIds = [
-    '1546069901-e90e7e6d90a7',
-    '1495112579519-330ec06b1cb5',
-    '1546069901-e90e7e6d90a7',
-    '1571407970349-1e4b842fd9d9',
-    '1495112579519-330ec06b1cb5',
-    '1546069901-08fa151a7738',
-    '1495112579519-6f10c9dde8b9',
-  ];
-  const index = parseInt(recipeId.slice(0, 8), 16) % photoIds.length;
-  return photoIds[index];
-}
-
 const styles = StyleSheet.create({
   cardContainer: {
     borderRadius: 16,
@@ -133,9 +111,6 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
-  },
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
   },
   difficultyBadge: {
     position: 'absolute',

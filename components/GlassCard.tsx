@@ -2,20 +2,15 @@ import { ReactNode } from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 import { BlurView } from 'expo-blur';
 
-import { useColorScheme } from '@/components/useColorScheme';
-
 type GlassCardProps = {
   children: ReactNode;
   style?: ViewStyle;
 };
 
 export function GlassCard({ children, style }: GlassCardProps) {
-  const colorScheme = useColorScheme();
-  const tint = colorScheme === 'dark' ? 'dark' : 'light';
-
   return (
     <View style={[styles.shell, style]}>
-      <BlurView intensity={30} tint={tint} style={styles.blur} />
+      <BlurView intensity={30} tint="light" style={styles.blur} />
       <View style={styles.content}>{children}</View>
     </View>
   );

@@ -16,6 +16,7 @@ export type RecipeIngredient = {
 export type Recipe = {
   id: string;
   title: string;
+  imageUrl?: string;
   totalTimeMinutes?: number;
   servings?: number;
   ingredients: RecipeIngredient[];
