@@ -72,11 +72,15 @@ export default function CookingModeScreen() {
 
       <GlassCard>
         <Text style={styles.sectionTitle}>Adımlar</Text>
-        {recipe.instructions.map((step, index) => (
-          <Text key={`${index}-${step}`} style={styles.step}>
-            {index + 1}. {step}
-          </Text>
-        ))}
+        {recipe.instructions && recipe.instructions.length > 0 ? (
+          recipe.instructions.map((step, index) => (
+            <Text key={`${index}-${step}`} style={styles.step}>
+              {index + 1}. {step}
+            </Text>
+          ))
+        ) : (
+          <Text style={styles.step}>Bu tarif için henüz adım bilgisi eklenmemiş.</Text>
+        )}
       </GlassCard>
 
       <GlassCard>

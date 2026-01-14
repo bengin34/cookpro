@@ -1,13 +1,16 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import { useQueryClient } from '@tanstack/react-query';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import { QueryProvider } from '@/providers/QueryProvider';
+import { fetchRecipes } from '@/lib/recipesApi';
+import { initImageCache } from '@/lib/imageCache';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -21,15 +24,6 @@ export const unstable_settings = {
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      staleTime: 60 * 1000,
-    },
-  },
-});
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
@@ -48,6 +42,11 @@ export default function RootLayout() {
     }
   }, [loaded]);
 
+  // Initialize image cache directory on app launch
+  useEffect(() => {
+    initImageCache();
+  }, []);
+
   if (!loaded) {
     return null;
   }
@@ -59,46 +58,63 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryProvider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen
-            name="recipes/[id]"
-            options={{
-              headerShown: false,
-            }}
-          />
-          <Stack.Screen
-            name="recipes/[id]/cook"
-            options={{
-              headerShown: true,
-              title: '',
-              headerBackTitle: '',
-              headerTintColor: '#e25822',
-              headerShadowVisible: false,
-              headerStyle: {
-                backgroundColor: '#ffffff',
-              }
-            }}
-          />
-          <Stack.Screen
-            name="shopping-list"
-            options={{
-              headerShown: true,
-              title: '',
-              headerBackTitle: '',
-              headerTintColor: '#e25822',
-              headerShadowVisible: false,
-              headerStyle: {
-                backgroundColor: '#ffffff',
-              }
-            }}
-          />
-          <Stack.Screen name="dialogs" options={{ headerShown: false }} />
-        </Stack>
+        <PrefetchWrapper>
+          <Stack>
+            <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen
+              name="recipes/[id]"
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name="recipes/[id]/cook"
+              options={{
+                headerShown: true,
+                title: '',
+                headerBackTitle: '',
+                headerTintColor: '#e25822',
+                headerShadowVisible: false,
+                headerStyle: {
+                  backgroundColor: '#ffffff',
+                }
+              }}
+            />
+            <Stack.Screen
+              name="shopping-list"
+              options={{
+                headerShown: true,
+                title: '',
+                headerBackTitle: '',
+                headerTintColor: '#e25822',
+                headerShadowVisible: false,
+                headerStyle: {
+                  backgroundColor: '#ffffff',
+                }
+              }}
+            />
+            <Stack.Screen name="dialogs" options={{ headerShown: false }} />
+          </Stack>
+        </PrefetchWrapper>
       </ThemeProvider>
-    </QueryClientProvider>
+    </QueryProvider>
   );
+}
+
+function PrefetchWrapper({ children }: { children: React.ReactNode }) {
+  const queryClient = useQueryClient();
+
+  useEffect(() => {
+    // Background prefetch recipes on app launch (non-blocking)
+    queryClient.prefetchQuery({
+      queryKey: ['recipes'],
+      queryFn: fetchRecipes,
+      staleTime: 1000 * 60 * 5, // 5 minutes
+    });
+  }, [queryClient]);
+
+  return <>{children}</>;
 }

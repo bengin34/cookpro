@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link, useLocalSearchParams } from 'expo-router';
-import { StyleSheet, View, Image, ScrollView, Pressable } from 'react-native';
+import { StyleSheet, View, Image, ScrollView, Pressable, ActivityIndicator } from 'react-native';
 import { useState } from 'react';
 
 import { GlassCard } from '@/components/GlassCard';
@@ -9,6 +9,7 @@ import { Text } from '@/components/Themed';
 import { fetchRecipeById } from '@/lib/recipesApi';
 import { scoreRecipe } from '@/lib/scoring';
 import { usePantryStore } from '@/store/pantryStore';
+import { useCachedImage } from '@/hooks/useCachedImage';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -39,18 +40,22 @@ export default function RecipeDetailScreen() {
   }
 
   const scoreInfo = scoreRecipe(pantryItems, recipe);
-  const imageUrl = recipe.imageUrl;
   const scoreColor = scoreInfo.score >= 75 ? '#22c55e' : scoreInfo.score >= 50 ? '#f97316' : '#ef4444';
+  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(recipe.imageUrl);
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Hero Image Section */}
       <View style={styles.heroContainer}>
-        {imageUrl ? (
+        {cachedImageUri ? (
           <Image
-            source={{ uri: imageUrl }}
+            source={{ uri: cachedImageUri }}
             style={styles.heroImage}
           />
+        ) : imageLoading ? (
+          <View style={[styles.heroImage, styles.heroImagePlaceholder]}>
+            <ActivityIndicator size="large" color="#c2410c" />
+          </View>
         ) : (
           <Image
             source={require('@/assets/images/placeholder.png')}
@@ -177,19 +182,28 @@ export default function RecipeDetailScreen() {
         )}
 
         {/* Cooking Instructions Tab */}
-        {activeTab === 'cooking' && recipe.instructions.length > 0 && (
+        {activeTab === 'cooking' && (
           <GlassCard>
-            <Text style={styles.sectionTitle}>Pişirme Talimatları ({recipe.instructions.length})</Text>
-            <View style={styles.instructionsList}>
-              {recipe.instructions.map((instruction, idx) => (
-                <View key={idx} style={styles.instructionRow}>
-                  <View style={styles.stepNumber}>
-                    <Text style={styles.stepNumberText}>{idx + 1}</Text>
-                  </View>
-                  <Text style={styles.instructionText}>{instruction}</Text>
+            {recipe.instructions && recipe.instructions.length > 0 ? (
+              <>
+                <Text style={styles.sectionTitle}>Pişirme Talimatları ({recipe.instructions.length})</Text>
+                <View style={styles.instructionsList}>
+                  {recipe.instructions.map((instruction, idx) => (
+                    <View key={idx} style={styles.instructionRow}>
+                      <View style={styles.stepNumber}>
+                        <Text style={styles.stepNumberText}>{idx + 1}</Text>
+                      </View>
+                      <Text style={styles.instructionText}>{instruction}</Text>
+                    </View>
+                  ))}
                 </View>
-              ))}
-            </View>
+              </>
+            ) : (
+              <>
+                <Text style={styles.sectionTitle}>Pişirme Talimatları</Text>
+                <Text style={styles.instructionText}>Bu tarif için henüz pişirme talimatları eklenmemiş.</Text>
+              </>
+            )}
           </GlassCard>
         )}
 
@@ -232,6 +246,11 @@ const styles = StyleSheet.create({
   heroImage: {
     width: '100%',
     height: '100%',
+  },
+  heroImagePlaceholder: {
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   heroOverlay: {
     ...StyleSheet.absoluteFillObject,

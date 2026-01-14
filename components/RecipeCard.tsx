@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { StyleSheet, View, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, Image, Dimensions, ActivityIndicator } from 'react-native';
 import { Link } from 'expo-router';
 
 import { Text } from '@/components/Themed';
 import { Recipe } from '@/lib/types';
+import { useCachedImage } from '@/hooks/useCachedImage';
 
 const CARD_WIDTH = Dimensions.get('window').width - 48; // Minus padding
 
@@ -16,8 +17,16 @@ type RecipeCardProps = {
 export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
   const [imageError, setImageError] = useState(false);
 
-  // Use recipe's image URL if available, otherwise fallback to placeholder
-  const imageUrl = !imageError && recipe.imageUrl ? recipe.imageUrl : undefined;
+  // Use cached image hook for better performance and offline support
+  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(
+    recipe.imageUrl,
+    {
+      downloadWhenOffline: false,
+    }
+  );
+
+  // Use cached URI if available, otherwise fallback to placeholder
+  const imageUrl = !imageError && cachedImageUri ? cachedImageUri : undefined;
 
   return (
     <Link href={`/recipes/${recipe.id}`} asChild>
@@ -28,8 +37,11 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
               source={{ uri: imageUrl }}
               style={styles.image}
               onError={() => setImageError(true)}
-              defaultSource={require('@/assets/images/placeholder.png')}
             />
+          ) : imageLoading ? (
+            <View style={[styles.image, styles.loadingContainer]}>
+              <ActivityIndicator size="small" color="#e25822" />
+            </View>
           ) : (
             <Image
               source={require('@/assets/images/placeholder.png')}
@@ -200,5 +212,9 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#c2410c',
     fontWeight: '600',
+  },
+  loadingContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

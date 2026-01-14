@@ -1,9 +1,9 @@
-import { StyleSheet, View, Image, Pressable } from 'react-native';
-import { useState } from 'react';
+import { StyleSheet, View, Image, Pressable, ActivityIndicator } from 'react-native';
 import { Link } from 'expo-router';
 
 import { Text } from '@/components/Themed';
 import { Recipe } from '@/lib/types';
+import { useCachedImage } from '@/hooks/useCachedImage';
 
 const CARD_WIDTH = 160;
 
@@ -14,20 +14,21 @@ type RecipeCardSmallProps = {
 };
 
 export function RecipeCardSmall({ recipe, score, missingCount }: RecipeCardSmallProps) {
-  const [imageError, setImageError] = useState(false);
-
-  const imageUrl = !imageError && recipe.imageUrl ? recipe.imageUrl : undefined;
+  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(recipe.imageUrl);
 
   return (
     <Link href={`/recipes/${recipe.id}`} asChild>
       <Pressable style={styles.container}>
         <View style={styles.imageWrapper}>
-          {imageUrl ? (
+          {cachedImageUri ? (
             <Image
-              source={{ uri: imageUrl }}
+              source={{ uri: cachedImageUri }}
               style={styles.image}
-              onError={() => setImageError(true)}
             />
+          ) : imageLoading ? (
+            <View style={[styles.image, styles.imagePlaceholder]}>
+              <ActivityIndicator size="small" color="#c2410c" />
+            </View>
           ) : (
             <Image
               source={require('@/assets/images/placeholder.png')}
@@ -83,6 +84,11 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
+  },
+  imagePlaceholder: {
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   scoreBadge: {
     position: 'absolute',

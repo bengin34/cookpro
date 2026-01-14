@@ -1,11 +1,100 @@
 import { Link } from 'expo-router';
-import { StyleSheet, ScrollView, View, Pressable, Image } from 'react-native';
+import { StyleSheet, ScrollView, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { useState } from 'react';
 
 import { GlassCard } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { useCookbookStore } from '@/store/cookbookStore';
+import { useCachedImage } from '@/hooks/useCachedImage';
+import type { Recipe } from '@/types/recipe';
+
+function RecipeListItem({ recipe }: { recipe: Recipe }) {
+  const { toggleFavorite } = useCookbookStore();
+  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(recipe.imageUrl);
+
+  return (
+    <Link href={`/recipes/${recipe.id}`} asChild>
+      <Pressable>
+        <View style={styles.recipeCardContainer}>
+          {/* Recipe Image */}
+          <View style={styles.recipeImageWrapper}>
+            {cachedImageUri ? (
+              <Image
+                source={{ uri: cachedImageUri }}
+                style={styles.recipeImage}
+              />
+            ) : imageLoading ? (
+              <View style={[styles.recipeImage, styles.imagePlaceholder]}>
+                <ActivityIndicator size="small" color="#c2410c" />
+              </View>
+            ) : (
+              <Image
+                source={require('@/assets/images/placeholder.png')}
+                style={styles.recipeImage}
+              />
+            )}
+            {/* Favorite Badge */}
+            <Pressable
+              style={styles.favoriteBadge}
+              onPress={(e) => {
+                e.stopPropagation();
+                toggleFavorite(recipe.id);
+              }}>
+              <Text style={styles.favoriteText}>
+                {recipe.isFavorite ? '♥' : '♡'}
+              </Text>
+            </Pressable>
+          </View>
+
+          {/* Recipe Info */}
+          <View style={styles.recipeInfo}>
+            <Text style={styles.recipeTitle} numberOfLines={2}>
+              {recipe.title}
+            </Text>
+
+            {/* Quick Info Row */}
+            <View style={styles.quickInfo}>
+              {recipe.totalTimeMinutes && (
+                <Text style={styles.quickInfoText}>⏱ {recipe.totalTimeMinutes} dk</Text>
+              )}
+              {recipe.servings && (
+                <Text style={styles.quickInfoText}>🍽 {recipe.servings}</Text>
+              )}
+            </View>
+
+            {/* Ingredients Preview */}
+            {recipe.ingredients && recipe.ingredients.length > 0 && (
+              <View style={styles.ingredientsPreview}>
+                {recipe.ingredients.slice(0, 2).map((ingredient) => (
+                  <Text key={ingredient.name} style={styles.ingredientChip}>
+                    {ingredient.name}
+                  </Text>
+                ))}
+                {recipe.ingredients.length > 2 && (
+                  <Text style={styles.ingredientChip}>
+                    +{recipe.ingredients.length - 2}
+                  </Text>
+                )}
+              </View>
+            )}
+
+            {/* Tags */}
+            {recipe.tags && recipe.tags.length > 0 && (
+              <View style={styles.tagsRow}>
+                {recipe.tags.slice(0, 2).map((tag) => (
+                  <Text key={tag} style={styles.tagChip}>
+                    {tag}
+                  </Text>
+                ))}
+              </View>
+            )}
+          </View>
+        </View>
+      </Pressable>
+    </Link>
+  );
+}
 
 export default function CookbookScreen() {
   const { savedRecipes, toggleFavorite, getAllTags, getRecipesByTag } = useCookbookStore();
@@ -64,85 +153,9 @@ export default function CookbookScreen() {
               </Text>
             </GlassCard>
 
-            {filteredRecipes.map((recipe) => {
-              return (
-                <Link key={recipe.id} href={`/recipes/${recipe.id}`} asChild>
-                  <Pressable>
-                    <View style={styles.recipeCardContainer}>
-                      {/* Recipe Image */}
-                      <View style={styles.recipeImageWrapper}>
-                        {recipe.imageUrl ? (
-                          <Image
-                            source={{ uri: recipe.imageUrl }}
-                            style={styles.recipeImage}
-                          />
-                        ) : (
-                          <Image
-                            source={require('@/assets/images/placeholder.png')}
-                            style={styles.recipeImage}
-                          />
-                        )}
-                        {/* Favorite Badge */}
-                        <Pressable
-                          style={styles.favoriteBadge}
-                          onPress={(e) => {
-                            e.stopPropagation();
-                            toggleFavorite(recipe.id);
-                          }}>
-                          <Text style={styles.favoriteText}>
-                            {recipe.isFavorite ? '♥' : '♡'}
-                          </Text>
-                        </Pressable>
-                      </View>
-
-                      {/* Recipe Info */}
-                      <View style={styles.recipeInfo}>
-                        <Text style={styles.recipeTitle} numberOfLines={2}>
-                          {recipe.title}
-                        </Text>
-
-                        {/* Quick Info Row */}
-                        <View style={styles.quickInfo}>
-                          {recipe.totalTimeMinutes && (
-                            <Text style={styles.quickInfoText}>⏱ {recipe.totalTimeMinutes} dk</Text>
-                          )}
-                          {recipe.servings && (
-                            <Text style={styles.quickInfoText}>🍽 {recipe.servings}</Text>
-                          )}
-                        </View>
-
-                        {/* Ingredients Preview */}
-                        {recipe.ingredients.length > 0 && (
-                          <View style={styles.ingredientsPreview}>
-                            {recipe.ingredients.slice(0, 2).map((ingredient) => (
-                              <Text key={ingredient.name} style={styles.ingredientChip}>
-                                {ingredient.name}
-                              </Text>
-                            ))}
-                            {recipe.ingredients.length > 2 && (
-                              <Text style={styles.ingredientChip}>
-                                +{recipe.ingredients.length - 2}
-                              </Text>
-                            )}
-                          </View>
-                        )}
-
-                        {/* Tags */}
-                        {recipe.tags.length > 0 && (
-                          <View style={styles.tagsRow}>
-                            {recipe.tags.slice(0, 2).map((tag) => (
-                              <Text key={tag} style={styles.tagChip}>
-                                {tag}
-                              </Text>
-                            ))}
-                          </View>
-                        )}
-                      </View>
-                    </View>
-                  </Pressable>
-                </Link>
-              );
-            })}
+            {filteredRecipes.map((recipe) => (
+              <RecipeListItem key={recipe.id} recipe={recipe} />
+            ))}
           </>
         ) : (
           <GlassCard>
@@ -230,6 +243,11 @@ const styles = StyleSheet.create({
   recipeImage: {
     width: '100%',
     height: '100%',
+  },
+  imagePlaceholder: {
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   favoriteBadge: {
     position: 'absolute',
