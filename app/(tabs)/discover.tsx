@@ -16,6 +16,7 @@ import { usePreferencesStore } from '@/store/preferencesStore';
 import { useNetworkStatus } from '@/hooks/useNetworkStatus';
 import { useAppStateRefresh } from '@/hooks/useAppStateRefresh';
 import { cacheImage } from '@/lib/imageCache';
+import { scaleFontSize, moderateScale } from '@/lib/responsive';
 
 export default function DiscoverScreen() {
   const pantryItems = usePantryStore((state) => state.items);
@@ -176,29 +177,29 @@ export default function DiscoverScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    gap: 24,
+    gap: moderateScale(24),
   },
   title: {
-    fontSize: 30,
+    fontSize: scaleFontSize(30),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
-    marginBottom: 8,
+    marginBottom: moderateScale(8),
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: scaleFontSize(14),
     textTransform: 'uppercase',
     letterSpacing: 1,
     opacity: 0.7,
     fontFamily: 'SpaceMono',
-    marginBottom: 24,
+    marginBottom: moderateScale(24),
   },
   allRecipesSection: {
-    marginTop: 8,
+    marginTop: moderateScale(8),
   },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: scaleFontSize(18),
     fontWeight: '700',
-    marginBottom: 16,
+    marginBottom: moderateScale(16),
   },
   meta: {
     opacity: 0.7,

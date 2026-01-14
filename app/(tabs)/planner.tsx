@@ -12,6 +12,12 @@ import { scoreRecipe } from '@/lib/scoring';
 import { useGameificationStore } from '@/store/gamificationStore';
 import { usePantryStore } from '@/store/pantryStore';
 import { usePlanStore } from '@/store/planStore';
+import {
+  scaleFontSize,
+  moderateScale,
+  shouldStackVertically,
+  getResponsiveGap,
+} from '@/lib/responsive';
 
 export default function PlannerScreen() {
   const [lastGeneratedMode, setLastGeneratedMode] = useState<PlanMode | null>(null);
@@ -136,12 +142,12 @@ export default function PlannerScreen() {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 30,
+    fontSize: scaleFontSize(30),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: scaleFontSize(14),
     textTransform: 'uppercase',
     letterSpacing: 1,
     opacity: 0.7,
@@ -149,7 +155,7 @@ const styles = StyleSheet.create({
   },
   segment: {
     flexDirection: 'row',
-    gap: 8,
+    gap: getResponsiveGap(8),
   },
   pill: {
     borderWidth: 1,
@@ -192,9 +198,9 @@ const styles = StyleSheet.create({
     fontFamily: 'SpaceMono',
   },
   actionRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
+    flexDirection: shouldStackVertically(360) ? 'column' : 'row',
+    alignItems: shouldStackVertically(360) ? 'stretch' : 'center',
+    gap: getResponsiveGap(10),
   },
   primaryButton: {
     marginTop: 6,

@@ -20,6 +20,16 @@ import { usePantryStore } from '@/store/pantryStore';
 import { usePreferencesStore } from '@/store/preferencesStore';
 import Colors from '@/constants/Colors';
 import { PantryItem } from '@/lib/types';
+import {
+  scaleFontSize,
+  moderateScale,
+  getSafeHorizontalPadding,
+  getModalMaxHeight,
+  shouldStackVertically,
+  getResponsiveGap,
+  scaleWidth,
+  scaleHeight,
+} from '@/lib/responsive';
 
 // Enable LayoutAnimation on Android
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
@@ -623,7 +633,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: 300,
+    height: scaleHeight(300),
     backgroundColor: 'rgba(226, 88, 34, 0.05)',
   },
 
@@ -632,16 +642,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    paddingHorizontal: 20,
-    paddingBottom: 12,
+    paddingHorizontal: getSafeHorizontalPadding(),
+    paddingBottom: moderateScale(12),
   },
   greeting: {
-    fontSize: 12,
+    fontSize: scaleFontSize(12),
     fontWeight: '500',
     marginBottom: 2,
   },
   title: {
-    fontSize: 24,
+    fontSize: scaleFontSize(24),
     fontWeight: '700',
     letterSpacing: -0.5,
   },
@@ -662,25 +672,26 @@ const styles = StyleSheet.create({
 
   // Stats
   statsRow: {
-    flexDirection: 'row',
-    paddingHorizontal: 20,
-    gap: 10,
-    marginBottom: 16,
+    flexDirection: shouldStackVertically(300) ? 'column' : 'row',
+    paddingHorizontal: getSafeHorizontalPadding(),
+    gap: getResponsiveGap(10),
+    marginBottom: moderateScale(16),
   },
   statCard: {
     flex: 1,
+    minWidth: shouldStackVertically(300) ? '100%' : undefined,
     backgroundColor: 'rgba(0,0,0,0.03)',
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: moderateScale(12),
+    padding: moderateScale(12),
     alignItems: 'center',
   },
   statNumber: {
-    fontSize: 20,
+    fontSize: scaleFontSize(20),
     fontWeight: '700',
     marginBottom: 2,
   },
   statLabel: {
-    fontSize: 10,
+    fontSize: scaleFontSize(10),
     fontWeight: '500',
     textTransform: 'uppercase',
     letterSpacing: 0.5,
@@ -688,17 +699,17 @@ const styles = StyleSheet.create({
 
   // Quick Add
   quickAddSection: {
-    paddingHorizontal: 20,
-    marginBottom: 16,
+    paddingHorizontal: getSafeHorizontalPadding(),
+    marginBottom: moderateScale(16),
   },
   sectionHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: moderateScale(12),
   },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: scaleFontSize(18),
     fontWeight: '600',
   },
   customAddButton: {
@@ -750,8 +761,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainContentContainer: {
-    paddingHorizontal: 20,
-    paddingBottom: 16,
+    paddingHorizontal: getSafeHorizontalPadding(),
+    paddingBottom: moderateScale(16),
   },
   emptyState: {
     flex: 1,
@@ -956,7 +967,7 @@ const styles = StyleSheet.create({
     paddingTop: 12,
   },
   modalContentLarge: {
-    maxHeight: '70%',
+    maxHeight: getModalMaxHeight(),
   },
   modalHandle: {
     width: 36,

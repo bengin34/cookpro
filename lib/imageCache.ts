@@ -1,4 +1,5 @@
-import * as FileSystem from 'expo-file-system';
+import { Directory, File } from 'expo-file-system';
+import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const CACHE_DIR = `${FileSystem.cacheDirectory}recipe-images/`;
@@ -20,9 +21,10 @@ interface CacheMetadata {
  */
 export async function initImageCache(): Promise<void> {
   try {
-    const dirInfo = await FileSystem.getInfoAsync(CACHE_DIR);
-    if (!dirInfo.exists) {
-      await FileSystem.makeDirectoryAsync(CACHE_DIR, { intermediates: true });
+    // Use new Directory API to check and create directory
+    const cacheDir = new Directory(CACHE_DIR);
+    if (!cacheDir.exists) {
+      await cacheDir.create();
     }
   } catch (error) {
     console.error('Failed to initialize image cache:', error);
@@ -82,9 +84,9 @@ export async function getCachedImageUri(url: string): Promise<string | null> {
       return null;
     }
 
-    // Check if file exists
-    const fileInfo = await FileSystem.getInfoAsync(cached.localUri);
-    if (!fileInfo.exists) {
+    // Check if file exists using new File API
+    const cachedFile = new File(cached.localUri);
+    if (!cachedFile.exists) {
       // File missing, remove from metadata
       delete metadata[cacheKey];
       await saveCacheMetadata(metadata);
@@ -127,9 +129,9 @@ export async function cacheImage(url: string): Promise<string | null> {
       return null;
     }
 
-    // Get file size
-    const fileInfo = await FileSystem.getInfoAsync(localUri);
-    const size = fileInfo.exists && 'size' in fileInfo ? fileInfo.size : 0;
+    // Get file size using new File API
+    const downloadedFile = new File(localUri);
+    const size = downloadedFile.exists ? downloadedFile.size : 0;
 
     // Update metadata
     const metadata = await getCacheMetadata();

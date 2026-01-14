@@ -11,7 +11,8 @@
     "check:recipes": "tsx scripts/check-recipes.ts",
     "test:image-setup": "tsx scripts/test-image-setup.ts",
     "populate:images": "tsx scripts/populate-recipe-images.ts",
-    "populate:images:all": "tsx scripts/populate-recipe-images.ts --start=0 --end=271"
+    "populate:images:all": "tsx scripts/populate-recipe-images.ts --start=0 --end=271",
+    "upload:image": "tsx scripts/upload-local-image.ts"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

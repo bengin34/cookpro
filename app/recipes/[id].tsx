@@ -10,6 +10,14 @@ import { fetchRecipeById } from '@/lib/recipesApi';
 import { scoreRecipe } from '@/lib/scoring';
 import { usePantryStore } from '@/store/pantryStore';
 import { useCachedImage } from '@/hooks/useCachedImage';
+import {
+  scaleFontSize,
+  moderateScale,
+  getSafeHorizontalPadding,
+  shouldStackVertically,
+  getResponsiveGap,
+  scaleHeight,
+} from '@/lib/responsive';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -238,9 +246,9 @@ const styles = StyleSheet.create({
   },
   heroContainer: {
     width: '100%',
-    height: 300,
+    height: scaleHeight(300),
     position: 'relative',
-    marginBottom: 20,
+    marginBottom: moderateScale(20),
     overflow: 'hidden',
   },
   heroImage: {
@@ -259,12 +267,12 @@ const styles = StyleSheet.create({
   heroContent: {
     ...StyleSheet.absoluteFillObject,
     justifyContent: 'flex-end',
-    paddingHorizontal: 24,
-    paddingBottom: 24,
-    gap: 12,
+    paddingHorizontal: getSafeHorizontalPadding(),
+    paddingBottom: moderateScale(24),
+    gap: moderateScale(12),
   },
   heroTitle: {
-    fontSize: 28,
+    fontSize: scaleFontSize(28, 0.6),
     fontWeight: '700',
     color: '#fff',
     textShadowColor: 'rgba(0,0,0,0.3)',
@@ -290,9 +298,9 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   scorePortionRow: {
-    flexDirection: 'row',
-    gap: 12,
-    alignItems: 'flex-end',
+    flexDirection: shouldStackVertically(360) ? 'column' : 'row',
+    gap: moderateScale(12),
+    alignItems: shouldStackVertically(360) ? 'flex-start' : 'flex-end',
   },
   portionSection: {
     display: 'flex',
@@ -300,8 +308,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'space-between',
     flex: 1,
-    
-    gap: 6,
+
+    gap: moderateScale(6),
   },
   portionLabel: {
     fontSize: 18,
@@ -309,16 +317,17 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   quickInfoContainer: {
-    flexDirection: 'row',
-    gap: 12,
-    paddingHorizontal: 24,
-    marginBottom: 24,
+    flexDirection: shouldStackVertically(300) ? 'column' : 'row',
+    gap: moderateScale(12),
+    paddingHorizontal: getSafeHorizontalPadding(),
+    marginBottom: moderateScale(24),
   },
   infoCard: {
     flex: 1,
+    minWidth: shouldStackVertically(300) ? '100%' : undefined,
     backgroundColor: 'rgba(255,255,255,0.3)',
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: moderateScale(12),
+    padding: moderateScale(12),
     alignItems: 'center',
     gap: 4,
   },
@@ -332,9 +341,9 @@ const styles = StyleSheet.create({
     fontFamily: 'SpaceMono',
   },
   contentContainer: {
-    paddingHorizontal: 24,
-    paddingBottom: 40,
-    gap: 16,
+    paddingHorizontal: getSafeHorizontalPadding(),
+    paddingBottom: moderateScale(40),
+    gap: moderateScale(16),
   },
   alertCard: {
     borderLeftWidth: 4,

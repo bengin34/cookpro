@@ -6,6 +6,12 @@ import { Text } from '@/components/Themed';
 import { useGameificationStore } from '@/store/gamificationStore';
 import { badges } from '@/lib/gamification/badges';
 import { useEffect } from 'react';
+import {
+  scaleFontSize,
+  moderateScale,
+  getGridColumns,
+  getResponsiveGap,
+} from '@/lib/responsive';
 
 export default function ProgressScreen() {
   const { stats, unlockedBadges, updateFromEvents } = useGameificationStore();
@@ -85,29 +91,29 @@ export default function ProgressScreen() {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 30,
+    fontSize: scaleFontSize(30),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
-    marginBottom: 4,
+    marginBottom: moderateScale(4),
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: scaleFontSize(14),
     textTransform: 'uppercase',
     letterSpacing: 1,
     opacity: 0.7,
     fontFamily: 'SpaceMono',
-    marginBottom: 20,
+    marginBottom: moderateScale(20),
   },
   cardTitle: {
-    fontSize: 18,
+    fontSize: scaleFontSize(18),
     fontWeight: '600',
-    marginBottom: 12,
+    marginBottom: moderateScale(12),
   },
   metric: {
-    fontSize: 36,
+    fontSize: scaleFontSize(36),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
-    marginBottom: 8,
+    marginBottom: moderateScale(8),
   },
   cardBody: {
     opacity: 0.7,
@@ -163,15 +169,16 @@ const styles = StyleSheet.create({
   badgeGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 12,
-    marginTop: 12,
+    gap: getResponsiveGap(12),
+    marginTop: moderateScale(12),
   },
   badgeItem: {
     alignItems: 'center',
-    width: '32%',
-    padding: 12,
+    width: `${(100 / getGridColumns(3) - 2)}%`,
+    minWidth: 100,
+    padding: moderateScale(12),
     backgroundColor: 'rgba(0,0,0,0.05)',
-    borderRadius: 12,
+    borderRadius: moderateScale(12),
   },
   badgeIcon: {
     fontSize: 32,

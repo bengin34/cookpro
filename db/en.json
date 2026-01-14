@@ -24,7 +24,7 @@
         "one-pan",
         "breakfast"
       ],
-      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000001_90b2f44c.jpg",
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000001_4bd814c8.jpg",
       "ingredients": [
         {
           "name": "tomato",
@@ -4456,7 +4456,7 @@
         "quick",
         "budget"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000052_fa8494db.jpg",
       "ingredients": [
         {
           "name": "pasta",
@@ -4533,7 +4533,7 @@
         "baked",
         "comfort"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000053_1952af1c.jpg",
       "ingredients": [
         {
           "name": "pasta",
@@ -4616,7 +4616,7 @@
         "aromatic",
         "mezze"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000054_ae0d44b4.jpg",
       "ingredients": [
         {
           "name": "rice",
@@ -4713,7 +4713,7 @@
         "quick",
         "mezze"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000055_0d1370c1.jpg",
       "ingredients": [
         {
           "name": "yogurt",
@@ -4780,7 +4780,7 @@
         "baked",
         "tea-time"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000056_eac61cf3.jpg",
       "ingredients": [
         {
           "name": "flour",
@@ -4881,7 +4881,7 @@
         "light",
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000057_14600cda.jpg",
       "ingredients": [
         {
           "name": "zucchini",
@@ -4957,7 +4957,7 @@
         "meal-prep",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000058_fd088c7f.jpg",
       "ingredients": [
         {
           "name": "cabbage",
@@ -5051,7 +5051,7 @@
         "comfort",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000059_4d9485d5.jpg",
       "ingredients": [
         {
           "name": "chicken_breast",
@@ -5122,7 +5122,7 @@
         "quick",
         "mezze"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000060_b5c7400e.jpg",
       "ingredients": [
         {
           "name": "chickpeas_cooked",
@@ -5290,7 +5290,7 @@
         "mezze",
         "vegetarian"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000062_94d77fba.jpg",
       "ingredients": [
         {
           "name": "eggplant",
@@ -5360,7 +5360,7 @@
         "comfort",
         "hearty"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000063_82f79f15.jpg",
       "ingredients": [
         {
           "name": "white_beans_dry",
@@ -5442,7 +5442,7 @@
         "baked",
         "party"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000064_0c23f5b6.jpg",
       "ingredients": [
         {
           "name": "yufka",
@@ -5526,7 +5526,7 @@
         "tea-time",
         "baked"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000065_314e9f05.jpg",
       "ingredients": [
         {
           "name": "butter",
@@ -5608,7 +5608,7 @@
         "quick",
         "budget"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000066_bc4bdec2.jpg",
       "ingredients": [
         {
           "name": "vermicelli",
@@ -5681,7 +5681,7 @@
         "crispy",
         "summer"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000067_bcb3eb68.jpg",
       "ingredients": [
         {
           "name": "eggplant",
@@ -5735,7 +5735,7 @@
         "street-food",
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000068_12103729.jpg",
       "ingredients": [
         {
           "name": "bread",
@@ -5818,7 +5818,7 @@
         "dessert",
         "fried"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000069_04fb729d.jpg",
       "ingredients": [
         {
           "name": "flour",
@@ -5895,7 +5895,7 @@
         "quick",
         "kebab-side"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000070_8abfc000.jpg",
       "ingredients": [
         {
           "name": "onion",
@@ -6054,7 +6054,7 @@
         "classic",
         "baked"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000072_8f390f51.jpg",
       "ingredients": [
         {
           "name": "eggplant",
@@ -6156,7 +6156,7 @@
         "mezze",
         "vegetarian"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000073_d8951333.jpg",
       "ingredients": [
         {
           "name": "eggplant",
@@ -6240,7 +6240,7 @@
         "mezze",
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000074_da0b907e.jpg",
       "ingredients": [
         {
           "name": "fine_bulgur",
@@ -6343,7 +6343,7 @@
         "quick",
         "vegetarian"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000075_2cb3d6c2.jpg",
       "ingredients": [
         {
           "name": "yogurt",
@@ -6417,7 +6417,7 @@
         "quick",
         "breakfast"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000076_86b54e08.jpg",
       "ingredients": [
         {
           "name": "egg",
@@ -6483,7 +6483,7 @@
         "breakfast",
         "one-pan"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000077_bca20267.jpg",
       "ingredients": [
         {
           "name": "tomato",
@@ -6556,7 +6556,7 @@
         "quick",
         "street-food"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000078_2cedf020.jpg",
       "ingredients": [
         {
           "name": "simit",
@@ -6617,7 +6617,7 @@
         "staple",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000079_4d09d3db.jpg",
       "ingredients": [
         {
           "name": "rice",
@@ -6680,7 +6680,7 @@
         "staple",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000080_d2e880cc.jpg",
       "ingredients": [
         {
           "name": "rice",
@@ -6745,7 +6745,7 @@
         "comfort",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000081_f209779e.jpg",
       "ingredients": [
         {
           "name": "white_beans_dry",
@@ -6826,7 +6826,7 @@
         "comfort",
         "stew"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000082_abe6e6f7.jpg",
       "ingredients": [
         {
           "name": "beef_stew_meat",
@@ -6902,7 +6902,7 @@
         "comfort",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000083_ab0d93e9.jpg",
       "ingredients": [
         {
           "name": "chicken_breast",
@@ -6989,7 +6989,7 @@
         "quick",
         "dessert"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000084_9c1b782c.jpg",
       "ingredients": [
         {
           "name": "milk",
@@ -7053,7 +7053,7 @@
         "classic",
         "dessert"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000085_bb0d2882.jpg",
       "ingredients": [
         {
           "name": "butter",
@@ -7117,7 +7117,7 @@
         "baked",
         "tea-time"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000086_6cf16434.jpg",
       "ingredients": [
         {
           "name": "flour",
@@ -7198,7 +7198,7 @@
       "tags": [
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000087_55d6df18.jpg",
       "ingredients": [
         {
           "name": "bread",
@@ -7252,7 +7252,7 @@
         "baked",
         "family"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000088_68dc00c5.jpg",
       "ingredients": [
         {
           "name": "potato",
@@ -7341,7 +7341,7 @@
         "olive-oil",
         "spring"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000089_3edd2d30.jpg",
       "ingredients": [
         {
           "name": "artichoke_heart",
@@ -7425,7 +7425,7 @@
         "quick",
         "fresh"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000090_29a6e889.jpg",
       "ingredients": [
         {
           "name": "arugula",
@@ -7484,7 +7484,7 @@
         "classic",
         "comfort"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000091_83d5d910.jpg",
       "ingredients": [
         {
           "name": "red_lentil",
@@ -7586,7 +7586,7 @@
         "vegan",
         "mezze"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000092_ff7a3962.jpg",
       "ingredients": [
         {
           "name": "red_lentil",
@@ -7784,7 +7784,7 @@
         "olive-oil",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000094_ae5f128d.jpg",
       "ingredients": [
         {
           "name": "borlotti_beans_cooked",
@@ -7872,7 +7872,7 @@
         "home-style",
         "vegetarian"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000095_81a2da42.jpg",
       "ingredients": [
         {
           "name": "spinach",
@@ -7955,7 +7955,7 @@
         "quick",
         "one-pan"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000096_910fc046.jpg",
       "ingredients": [
         {
           "name": "chicken_breast",
@@ -8037,7 +8037,7 @@
         "classic",
         "family"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000097_2bcff2a7.jpg",
       "ingredients": [
         {
           "name": "ground_beef",
@@ -8116,7 +8116,7 @@
         "picnic",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000098_646c66c5.jpg",
       "ingredients": [
         {
           "name": "potato",
@@ -8188,7 +8188,7 @@
         "quick",
         "fresh"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000099_797ae832.jpg",
       "ingredients": [
         {
           "name": "tomato",
@@ -8273,7 +8273,7 @@
         "comfort",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000100_bee77c86.jpg",
       "ingredients": [
         {
           "name": "rice",
@@ -8444,7 +8444,7 @@
         "home-style",
         "crispy"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000102_0fadb697.jpg",
       "ingredients": [
         {
           "name": "ground_beef",
@@ -8528,7 +8528,7 @@
         "baked",
         "family"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000103_54b27be5.jpg",
       "ingredients": [
         {
           "name": "chicken_thigh",
@@ -8612,7 +8612,7 @@
         "crispy",
         "tea-time"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000104_7d0972dc.jpg",
       "ingredients": [
         {
           "name": "yufka",
@@ -8682,7 +8682,7 @@
         "dessert",
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000105_0d1e59b9.jpg",
       "ingredients": [
         {
           "name": "milk",
@@ -8746,7 +8746,7 @@
         "dessert",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000106_11e7d624.jpg",
       "ingredients": [
         {
           "name": "milk",
@@ -8810,7 +8810,7 @@
         "budget",
         "quick"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000107_32962c15.jpg",
       "ingredients": [
         {
           "name": "coarse_bulgur",
@@ -8879,7 +8879,7 @@
         "classic",
         "comfort"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000108_5cabb800.jpg",
       "ingredients": [
         {
           "name": "chickpeas_dry",
@@ -8954,7 +8954,7 @@
         "comfort",
         "family"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000109_69131df5.jpg",
       "ingredients": [
         {
           "name": "chickpeas_dry",
@@ -9035,7 +9035,7 @@
         "quick",
         "budget"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000110_992a2013.jpg",
       "ingredients": [
         {
           "name": "fine_bulgur",
@@ -9112,7 +9112,7 @@
         "olive-oil",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000111_e05b53be.jpg",
       "ingredients": [
         {
           "name": "leek",
@@ -9195,7 +9195,7 @@
         "olive-oil",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000141_0631c4f0.jpg",
       "ingredients": [
         {
           "name": "celery_root",
@@ -9277,7 +9277,7 @@
         "seafood",
         "crispy"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000142_8cc71cac.jpg",
       "ingredients": [
         {
           "name": "anchovy",
@@ -9338,7 +9338,7 @@
         "quick",
         "one-pan"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000143_379a3a53.jpg",
       "ingredients": [
         {
           "name": "mushroom",
@@ -9481,7 +9481,7 @@
         "dessert",
         "classic"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000145_395b2ec3.jpg",
       "ingredients": [
         {
           "name": "rice",
@@ -9544,7 +9544,7 @@
         "dessert",
         "baked"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000146_da36cbeb.jpg",
       "ingredients": [
         {
           "name": "egg",
@@ -9632,7 +9632,7 @@
         "crispy",
         "vegetarian"
       ],
-      "image_source": null,
+      "image_source": "https://mdetucneptjlkbkzddpu.supabase.co/storage/v1/object/public/recipe-images/tr_000147_0809a53e.jpg",
       "ingredients": [
         {
           "name": "cauliflower",

@@ -8,6 +8,12 @@ import { Text } from '@/components/Themed';
 import { useCookbookStore } from '@/store/cookbookStore';
 import { useCachedImage } from '@/hooks/useCachedImage';
 import type { Recipe } from '@/types/recipe';
+import {
+  scaleFontSize,
+  moderateScale,
+  getResponsiveValue,
+  scaleHeight,
+} from '@/lib/responsive';
 
 function RecipeListItem({ recipe }: { recipe: Recipe }) {
   const { toggleFavorite } = useCookbookStore();
@@ -174,18 +180,18 @@ export default function CookbookScreen() {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 30,
+    fontSize: scaleFontSize(30),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
-    marginBottom: 8,
+    marginBottom: moderateScale(8),
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: scaleFontSize(14),
     textTransform: 'uppercase',
     letterSpacing: 1,
     opacity: 0.7,
     fontFamily: 'SpaceMono',
-    marginBottom: 16,
+    marginBottom: moderateScale(16),
   },
   cardTitle: {
     fontSize: 18,
@@ -235,8 +241,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   recipeImageWrapper: {
-    width: '35%',
-    height: 140,
+    width: getResponsiveValue('35%', '30%', '28%'),
+    height: scaleHeight(140),
     position: 'relative',
     backgroundColor: '#e0e0e0',
   },
