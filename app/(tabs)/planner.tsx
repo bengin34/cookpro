@@ -3,7 +3,7 @@ import { Link } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { GlassCard } from '@/components/GlassCard';
+import { GlassCard, SectionContainer } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { PlanMode } from '@/lib/planner';
@@ -52,90 +52,100 @@ export default function PlannerScreen() {
       <Text style={styles.title}>Planner</Text>
       <Text style={styles.subtitle}>Meal / Day / Week</Text>
 
-      <View style={styles.segment}>
-        {(['meal', 'day', 'week'] as PlanMode[]).map((value) => {
-          const isActive = value === mode;
-          return (
-            <Pressable
-              key={value}
-              style={[styles.pill, isActive && styles.pillActive]}
-              onPress={() => setMode(value)}>
-              <Text style={isActive ? styles.pillTextActive : styles.pillText}>
-                {value.toUpperCase()}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
-
-      <GlassCard>
-        <Text style={styles.cardTitle}>Otomatik oneriler</Text>
-        <Text style={styles.cardBody}>
-          Pantry once gelir, son kullanma yakinsa puan artar. Tarifleri kilitle veya degistir.
-        </Text>
-        <Pressable style={styles.primaryButton} onPress={() => generatePlan(pantryItems, recipes)}>
-          <Text style={styles.primaryButtonText}>Plani yenile</Text>
-        </Pressable>
-      </GlassCard>
-
-      {isLoading ? (
-        <GlassCard>
-          <Text style={styles.cardBody}>Plan icin tarifler yukleniyor...</Text>
-        </GlassCard>
-      ) : null}
-
-      {isError ? (
-        <GlassCard>
-          <Text style={styles.cardBody}>Tarifler yuklenemedi.</Text>
-        </GlassCard>
-      ) : null}
-
-      {!isLoading && !isError && planRecipes.length === 0 ? (
-        <GlassCard>
-          <Text style={styles.cardBody}>Plan olusmadi. Plani yenileyin.</Text>
-        </GlassCard>
-      ) : null}
-
-      {!isLoading && !isError
-        ? planRecipes.map((recipe, index) => {
-            const scoreInfo = scoreRecipe(pantryItems, recipe);
-            const isLocked = lockedIds.includes(recipe.id);
-
+      {/* Mode Selection Section */}
+      <SectionContainer title="Plan Modu" style={styles.modeSection}>
+        <View style={styles.segment}>
+          {(['meal', 'day', 'week'] as PlanMode[]).map((value) => {
+            const isActive = value === mode;
             return (
-              <GlassCard key={recipe.id}>
-                <View style={styles.cardHeader}>
-                  <Text style={styles.cardTitle}>{recipe.title}</Text>
-                  <Text style={styles.scoreInline}>{scoreInfo.score}%</Text>
-                </View>
-                <Text style={styles.cardBody}>
-                  Eksik: {scoreInfo.missingCount} malzeme • {recipe.totalTimeMinutes ?? '--'} dk
+              <Pressable
+                key={value}
+                style={[styles.pill, isActive && styles.pillActive]}
+                onPress={() => setMode(value)}>
+                <Text style={isActive ? styles.pillTextActive : styles.pillText}>
+                  {value.toUpperCase()}
                 </Text>
-                <View style={styles.actionRow}>
-                  <Pressable
-                    style={[styles.ghostButton, isLocked && styles.lockedButton]}
-                    onPress={() => toggleLock(recipe.id)}>
-                    <Text style={isLocked ? styles.lockedButtonText : styles.ghostButtonText}>
-                      {isLocked ? 'Kilitli' : 'Kilitle'}
-                    </Text>
-                  </Pressable>
-                  <Pressable
-                    style={[styles.ghostButton, isLocked && styles.ghostButtonDisabled]}
-                    onPress={() => swapRecipe(index, pantryItems, recipes)}
-                    disabled={isLocked}>
-                    <Text style={styles.ghostButtonText}>Degistir</Text>
-                  </Pressable>
-                  <Link href={`/recipes/${recipe.id}`}>
-                    <Text style={styles.link}>Tarif</Text>
-                  </Link>
-                </View>
-              </GlassCard>
+              </Pressable>
             );
-          })
-        : null}
+          })}
+        </View>
 
-      <Link href="/shopping-list">
-        <Text style={styles.link}>Shopping List gor</Text>
-      </Link>
+        <GlassCard variant="subtle" style={styles.infoCard}>
+          <Text style={styles.cardBody}>
+            Pantry once gelir, son kullanma yakinsa puan artar. Tarifleri kilitle veya degistir.
+          </Text>
+          <Pressable style={styles.primaryButton} onPress={() => generatePlan(pantryItems, recipes)}>
+            <Text style={styles.primaryButtonText}>Plani yenile</Text>
+          </Pressable>
+        </GlassCard>
+      </SectionContainer>
+
+      {/* Plan Results Section */}
+      <SectionContainer title="Önerilen Tarifler" style={styles.planSection}>
+        {isLoading ? (
+          <GlassCard variant="subtle">
+            <Text style={styles.cardBody}>Plan icin tarifler yukleniyor...</Text>
+          </GlassCard>
+        ) : null}
+
+        {isError ? (
+          <GlassCard variant="subtle">
+            <Text style={styles.cardBody}>Tarifler yuklenemedi.</Text>
+          </GlassCard>
+        ) : null}
+
+        {!isLoading && !isError && planRecipes.length === 0 ? (
+          <GlassCard variant="subtle">
+            <Text style={styles.cardBody}>Plan olusmadi. Plani yenileyin.</Text>
+          </GlassCard>
+        ) : null}
+
+        {!isLoading && !isError
+          ? planRecipes.map((recipe, index) => {
+              const scoreInfo = scoreRecipe(pantryItems, recipe);
+              const isLocked = lockedIds.includes(recipe.id);
+
+              return (
+                <GlassCard key={recipe.id} variant="elevated">
+                  <View style={styles.cardHeader}>
+                    <Text style={styles.cardTitle}>{recipe.title}</Text>
+                    <Text style={styles.scoreInline}>{scoreInfo.score}%</Text>
+                  </View>
+                  <Text style={styles.cardBody}>
+                    Eksik: {scoreInfo.missingCount} malzeme • {recipe.totalTimeMinutes ?? '--'} dk
+                  </Text>
+                  <View style={styles.actionRow}>
+                    <Pressable
+                      style={[styles.ghostButton, isLocked && styles.lockedButton]}
+                      onPress={() => toggleLock(recipe.id)}>
+                      <Text style={isLocked ? styles.lockedButtonText : styles.ghostButtonText}>
+                        {isLocked ? 'Kilitli' : 'Kilitle'}
+                      </Text>
+                    </Pressable>
+                    <Pressable
+                      style={[styles.ghostButton, isLocked && styles.ghostButtonDisabled]}
+                      onPress={() => swapRecipe(index, pantryItems, recipes)}
+                      disabled={isLocked}>
+                      <Text style={styles.ghostButtonText}>Degistir</Text>
+                    </Pressable>
+                    <Link href={`/recipes/${recipe.id}`}>
+                      <Text style={styles.link}>Tarif</Text>
+                    </Link>
+                  </View>
+                </GlassCard>
+              );
+            })
+          : null}
+      </SectionContainer>
+
+      {/* Shopping List Link */}
+      <SectionContainer style={styles.shoppingSection}>
+        <Link href="/shopping-list">
+          <View style={styles.shoppingLink}>
+            <Text style={styles.shoppingLinkText}>🛒 Shopping List görüntüle</Text>
+          </View>
+        </Link>
+      </SectionContainer>
     </Screen>
   );
 }
@@ -152,6 +162,23 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     opacity: 0.7,
     fontFamily: 'SpaceMono',
+    marginBottom: moderateScale(16),
+  },
+  modeSection: {
+    backgroundColor: 'rgba(194, 65, 12, 0.04)',
+    borderColor: 'rgba(194, 65, 12, 0.1)',
+  },
+  planSection: {
+    backgroundColor: 'rgba(74, 222, 128, 0.04)',
+    borderColor: 'rgba(74, 222, 128, 0.1)',
+  },
+  shoppingSection: {
+    backgroundColor: 'rgba(0, 122, 255, 0.04)',
+    borderColor: 'rgba(0, 122, 255, 0.1)',
+  },
+  infoCard: {
+    marginTop: moderateScale(12),
+    marginBottom: 0,
   },
   segment: {
     flexDirection: 'row',
@@ -239,5 +266,18 @@ const styles = StyleSheet.create({
   link: {
     fontWeight: '600',
     color: '#c2410c',
+  },
+  shoppingLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: moderateScale(12),
+    backgroundColor: 'rgba(0, 122, 255, 0.1)',
+    borderRadius: 12,
+  },
+  shoppingLinkText: {
+    fontWeight: '600',
+    color: '#007AFF',
+    fontSize: scaleFontSize(15),
   },
 });

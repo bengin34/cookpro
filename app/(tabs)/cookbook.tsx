@@ -2,7 +2,7 @@ import { Link } from 'expo-router';
 import { StyleSheet, ScrollView, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { useState } from 'react';
 
-import { GlassCard } from '@/components/GlassCard';
+import { GlassCard, SectionContainer } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { useCookbookStore } from '@/store/cookbookStore';
@@ -117,17 +117,22 @@ export default function CookbookScreen() {
         <Text style={styles.title}>My Cookbook</Text>
         <Text style={styles.subtitle}>Kisisel arsiv</Text>
 
-        <GlassCard>
-          <Text style={styles.cardTitle}>Tarif import</Text>
-          <Text style={styles.cardBody}>URL yapistir, tarifini ekle.</Text>
-          <Link href="/dialogs/recipe-import">
-            <Text style={styles.link}>URL ile import</Text>
-          </Link>
-        </GlassCard>
+        {/* Import Section */}
+        <SectionContainer title="Tarif Ekle" style={styles.importSection}>
+          <GlassCard variant="elevated">
+            <Text style={styles.cardTitle}>Tarif import</Text>
+            <Text style={styles.cardBody}>URL yapistir, tarifini ekle.</Text>
+            <Link href="/dialogs/recipe-import">
+              <View style={styles.importButton}>
+                <Text style={styles.importButtonText}>+ URL ile import</Text>
+              </View>
+            </Link>
+          </GlassCard>
+        </SectionContainer>
 
+        {/* Tags Section */}
         {allTags.length > 0 && (
-          <GlassCard>
-            <Text style={styles.cardTitle}>Etiketler</Text>
+          <SectionContainer title="Etiketler" style={styles.tagsSection}>
             <View style={styles.tagContainer}>
               {allTags.map((tag) => (
                 <Pressable
@@ -147,32 +152,34 @@ export default function CookbookScreen() {
                 </Pressable>
               ))}
             </View>
-          </GlassCard>
+          </SectionContainer>
         )}
 
-        {filteredRecipes.length > 0 ? (
-          <>
-            <GlassCard>
-              <Text style={styles.cardTitle}>Kaydedilen Tarifler</Text>
+        {/* Recipes Section */}
+        <SectionContainer title="Tariflerim" style={styles.recipesSection}>
+          {filteredRecipes.length > 0 ? (
+            <>
+              <View style={styles.recipeCountBadge}>
+                <Text style={styles.recipeCountText}>
+                  {selectedTag ? `"${selectedTag}" etiketli` : 'Toplam'} {filteredRecipes.length} tarif
+                </Text>
+              </View>
+
+              {filteredRecipes.map((recipe) => (
+                <RecipeListItem key={recipe.id} recipe={recipe} />
+              ))}
+            </>
+          ) : (
+            <GlassCard variant="subtle">
+              <Text style={styles.cardTitle}>Kaydedilen Tarifler Yok</Text>
               <Text style={styles.cardBody}>
-                {selectedTag ? `"${selectedTag}" etiketli` : 'Toplam'} {filteredRecipes.length} tarif
+                {selectedTag
+                  ? `"${selectedTag}" etiketinde tarif bulunmamakta.`
+                  : 'Henuz kayitli tarif yok. Yukaridan URL ile import etmeye basla!'}
               </Text>
             </GlassCard>
-
-            {filteredRecipes.map((recipe) => (
-              <RecipeListItem key={recipe.id} recipe={recipe} />
-            ))}
-          </>
-        ) : (
-          <GlassCard>
-            <Text style={styles.cardTitle}>Kaydedilen Tarifler Yok</Text>
-            <Text style={styles.cardBody}>
-              {selectedTag
-                ? `"${selectedTag}" etiketinde tarif bulunmamakta.`
-                : 'Henuz kayitli tarif yok. Yukaridan URL ile import etmeye basla!'}
-            </Text>
-          </GlassCard>
-        )}
+          )}
+        </SectionContainer>
       </ScrollView>
     </Screen>
   );
@@ -193,6 +200,44 @@ const styles = StyleSheet.create({
     fontFamily: 'SpaceMono',
     marginBottom: moderateScale(16),
   },
+  importSection: {
+    backgroundColor: 'rgba(194, 65, 12, 0.04)',
+    borderColor: 'rgba(194, 65, 12, 0.1)',
+  },
+  tagsSection: {
+    backgroundColor: 'rgba(167, 139, 250, 0.04)',
+    borderColor: 'rgba(167, 139, 250, 0.1)',
+  },
+  recipesSection: {
+    backgroundColor: 'rgba(0, 122, 255, 0.03)',
+    borderColor: 'rgba(0, 122, 255, 0.08)',
+  },
+  importButton: {
+    marginTop: moderateScale(8),
+    backgroundColor: 'rgba(194, 65, 12, 0.1)',
+    paddingVertical: moderateScale(10),
+    paddingHorizontal: moderateScale(16),
+    borderRadius: 12,
+    alignSelf: 'flex-start',
+  },
+  importButtonText: {
+    fontWeight: '600',
+    color: '#c2410c',
+    fontSize: scaleFontSize(14),
+  },
+  recipeCountBadge: {
+    backgroundColor: 'rgba(0, 122, 255, 0.1)',
+    paddingVertical: moderateScale(8),
+    paddingHorizontal: moderateScale(12),
+    borderRadius: 10,
+    marginBottom: moderateScale(12),
+    alignSelf: 'flex-start',
+  },
+  recipeCountText: {
+    fontSize: scaleFontSize(12),
+    fontWeight: '600',
+    color: '#007AFF',
+  },
   cardTitle: {
     fontSize: 18,
     fontWeight: '600',
@@ -210,7 +255,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 8,
-    marginTop: 10,
   },
   tagButton: {
     paddingVertical: 6,

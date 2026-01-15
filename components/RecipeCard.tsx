@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, View, Image, Dimensions, ActivityIndicator } from 'react-native';
+import { StyleSheet, View, Image, Dimensions, Pressable } from 'react-native';
 import { Link } from 'expo-router';
 
 import { Text } from '@/components/Themed';
@@ -17,20 +17,15 @@ type RecipeCardProps = {
 export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
   const [imageError, setImageError] = useState(false);
 
-  // Use cached image hook for better performance and offline support
-  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(
-    recipe.imageUrl,
-    {
-      downloadWhenOffline: false,
-    }
-  );
+  // Use cached image hook - returns network URL immediately, caches in background
+  const { uri: cachedImageUri } = useCachedImage(recipe.imageUrl);
 
-  // Use cached URI if available, otherwise fallback to placeholder
+  // Use cached URI if available - shows network URL instantly while caching
   const imageUrl = !imageError && cachedImageUri ? cachedImageUri : undefined;
 
   return (
     <Link href={`/recipes/${recipe.id}`} asChild>
-      <View style={styles.cardContainer}>
+      <Pressable style={styles.cardContainer}>
         <View style={styles.imageWrapper}>
           {imageUrl ? (
             <Image
@@ -38,10 +33,6 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
               style={styles.image}
               onError={() => setImageError(true)}
             />
-          ) : imageLoading ? (
-            <View style={[styles.image, styles.loadingContainer]}>
-              <ActivityIndicator size="small" color="#e25822" />
-            </View>
           ) : (
             <Image
               source={require('@/assets/images/placeholder.png')}
@@ -102,7 +93,7 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
             </View>
           )}
         </View>
-      </View>
+      </Pressable>
     </Link>
   );
 }
@@ -212,9 +203,5 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#c2410c',
     fontWeight: '600',
-  },
-  loadingContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

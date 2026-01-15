@@ -9,6 +9,7 @@ import { useQueryClient } from '@tanstack/react-query';
 
 import { useColorScheme } from '@/components/useColorScheme';
 import { QueryProvider } from '@/providers/QueryProvider';
+import { NetworkStatusProvider } from '@/providers/NetworkStatusProvider';
 import { fetchRecipes } from '@/lib/recipesApi';
 import { initImageCache } from '@/lib/imageCache';
 
@@ -59,47 +60,35 @@ function RootLayoutNav() {
 
   return (
     <QueryProvider>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <PrefetchWrapper>
-          <Stack>
-            <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen
-              name="recipes/[id]"
-              options={{
-                headerShown: false,
-              }}
-            />
-            <Stack.Screen
-              name="recipes/[id]/cook"
-              options={{
-                headerShown: true,
-                title: '',
-                headerBackTitle: '',
-                headerTintColor: '#e25822',
-                headerShadowVisible: false,
-                headerStyle: {
-                  backgroundColor: '#ffffff',
-                }
-              }}
-            />
-            <Stack.Screen
-              name="shopping-list"
-              options={{
-                headerShown: true,
-                title: '',
-                headerBackTitle: '',
-                headerTintColor: '#e25822',
-                headerShadowVisible: false,
-                headerStyle: {
-                  backgroundColor: '#ffffff',
-                }
-              }}
-            />
-            <Stack.Screen name="dialogs" options={{ headerShown: false }} />
-          </Stack>
-        </PrefetchWrapper>
-      </ThemeProvider>
+      <NetworkStatusProvider>
+        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+          <PrefetchWrapper>
+            <Stack>
+              <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+              <Stack.Screen
+                name="recipes/[id]"
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name="recipes/[id]/cook"
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name="shopping-list"
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen name="dialogs" options={{ headerShown: false }} />
+            </Stack>
+          </PrefetchWrapper>
+        </ThemeProvider>
+      </NetworkStatusProvider>
     </QueryProvider>
   );
 }

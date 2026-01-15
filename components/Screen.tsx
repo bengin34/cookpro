@@ -16,7 +16,7 @@ export function Screen({ children, style, contentStyle }: ScreenProps) {
   const insets = useSafeAreaInsets();
 
   return (
-    <View style={[styles.root, { backgroundColor }, style]}>
+    <View style={[styles.root, { backgroundColor, paddingTop: insets.top }, style]}>
       <ScreenBackground />
       <ScrollView
         contentContainerStyle={[

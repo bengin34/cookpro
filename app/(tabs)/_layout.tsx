@@ -72,6 +72,7 @@ export default function TabLayout() {
         name="discover"
         options={{
           title: 'Discover',
+          headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'compass' : 'compass-outline'}
@@ -85,6 +86,7 @@ export default function TabLayout() {
         name="planner"
         options={{
           title: 'Planner',
+          headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'calendar' : 'calendar-outline'}
@@ -98,6 +100,7 @@ export default function TabLayout() {
         name="cookbook"
         options={{
           title: 'Cookbook',
+          headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'book' : 'book-outline'}
@@ -111,6 +114,7 @@ export default function TabLayout() {
         name="progress"
         options={{
           title: 'Progress',
+          headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'trophy' : 'trophy-outline'}

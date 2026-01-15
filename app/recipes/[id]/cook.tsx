@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { useQuery } from '@tanstack/react-query';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
@@ -9,6 +10,7 @@ import { Text } from '@/components/Themed';
 import { fetchRecipeById } from '@/lib/recipesApi';
 import { useGameificationStore } from '@/store/gamificationStore';
 import { usePantryStore } from '@/store/pantryStore';
+import Colors from '@/constants/Colors';
 
 export default function CookingModeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -67,6 +69,16 @@ export default function CookingModeScreen() {
 
   return (
     <Screen>
+      {/* Back Button */}
+      <Pressable
+        style={styles.backButton}
+        onPress={() => router.back()}
+        hitSlop={8}
+      >
+        <Ionicons name="chevron-back" size={24} color={Colors.light.tint} />
+        <Text style={styles.backText}>Back</Text>
+      </Pressable>
+
       <Text style={styles.title}>Pişirme Modu</Text>
       <Text style={styles.subtitle}>{recipe.title}</Text>
 
@@ -110,6 +122,17 @@ export default function CookingModeScreen() {
 }
 
 const styles = StyleSheet.create({
+  backButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+    marginLeft: -8,
+  },
+  backText: {
+    fontSize: 16,
+    color: Colors.light.tint,
+    fontWeight: '500',
+  },
   title: {
     fontSize: 30,
     fontWeight: '700',

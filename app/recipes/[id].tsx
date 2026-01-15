@@ -1,7 +1,9 @@
+import { Ionicons } from '@expo/vector-icons';
 import { useQuery } from '@tanstack/react-query';
-import { Link, useLocalSearchParams } from 'expo-router';
+import { Link, useLocalSearchParams, useRouter } from 'expo-router';
 import { StyleSheet, View, Image, ScrollView, Pressable, ActivityIndicator } from 'react-native';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { GlassCard } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
@@ -15,14 +17,15 @@ import {
   moderateScale,
   getSafeHorizontalPadding,
   shouldStackVertically,
-  getResponsiveGap,
   scaleHeight,
 } from '@/lib/responsive';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
+  const router = useRouter();
+  const insets = useSafeAreaInsets();
   const pantryItems = usePantryStore((state) => state.items);
-  const [portions, setPortions] = useState(1);
+  const [portions, setPortions] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<'ingredients' | 'cooking'>('ingredients');
 
   const { data: recipe, isLoading, isError } = useQuery({
@@ -30,6 +33,17 @@ export default function RecipeDetailScreen() {
     queryFn: () => fetchRecipeById(String(id)),
     enabled: Boolean(id),
   });
+
+  // IMPORTANT: All hooks must be called before any early returns
+  // This is required by React's Rules of Hooks
+  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(recipe?.imageUrl);
+
+  // Initialize portions from recipe's servings value
+  useEffect(() => {
+    if (recipe?.servings && portions === null) {
+      setPortions(recipe.servings);
+    }
+  }, [recipe?.servings, portions]);
 
   if (isLoading) {
     return (
@@ -49,12 +63,20 @@ export default function RecipeDetailScreen() {
 
   const scoreInfo = scoreRecipe(pantryItems, recipe);
   const scoreColor = scoreInfo.score >= 75 ? '#22c55e' : scoreInfo.score >= 50 ? '#f97316' : '#ef4444';
-  const { uri: cachedImageUri, isLoading: imageLoading } = useCachedImage(recipe.imageUrl);
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Hero Image Section */}
       <View style={styles.heroContainer}>
+        {/* Back Button */}
+        <Pressable
+          style={[styles.backButton, { top: insets.top + 8 }]}
+          onPress={() => router.back()}
+          hitSlop={8}
+        >
+          <Ionicons name="chevron-back" size={24} color="#fff" />
+        </Pressable>
+
         {cachedImageUri ? (
           <Image
             source={{ uri: cachedImageUri }}
@@ -77,44 +99,43 @@ export default function RecipeDetailScreen() {
         {/* Title and Score Overlay */}
         <View style={styles.heroContent}>
           <Text style={styles.heroTitle}>{recipe.title}</Text>
-          <View style={styles.scorePortionRow}>
-            <View style={[styles.scoreDisplay, { borderColor: scoreColor }]}>
-              <Text style={[styles.scoreDisplayText, { color: scoreColor }]}>
-                {Math.round(scoreInfo.score)}%
-              </Text>
-              <Text style={styles.scoreLabel}>Uyum</Text>
-            </View>
-            <View style={styles.portionSection}>
-              <Text style={styles.portionLabel}>🍽 Porsiyon</Text>
-              <View style={styles.portionControl}>
-                <Pressable
-                  onPress={() => setPortions(Math.max(1, portions - 1))}
-                  style={[styles.portionButton, portions === 1 && styles.portionButtonDisabled]}
-                  disabled={portions === 1}
-                >
-                  <Text style={[styles.portionButtonText, portions === 1 && styles.portionButtonTextDisabled]}>−</Text>
-                </Pressable>
-                <Text style={styles.portionDisplay}>{portions}</Text>
-                <Pressable
-                  onPress={() => setPortions(portions + 1)}
-                  style={styles.portionButton}
-                >
-                  <Text style={styles.portionButtonText}>+</Text>
-                </Pressable>
-              </View>
-            </View>
+          <View style={[styles.scoreDisplay, { borderColor: scoreColor }]}>
+            <Text style={[styles.scoreDisplayText, { color: scoreColor }]}>
+              {Math.round(scoreInfo.score)}%
+            </Text>
+            <Text style={styles.scoreLabel}>Uyum</Text>
           </View>
         </View>
       </View>
 
       {/* Quick Info Cards */}
       <View style={styles.quickInfoContainer}>
-        <View style={styles.infoCard}>
+        <View style={styles.infoCardSmall}>
           <Text style={styles.infoLabel}>⏱ Süre</Text>
           <Text style={styles.infoValue}>{recipe.totalTimeMinutes ?? '--'} dk</Text>
         </View>
-       
-        <View style={styles.infoCard}>
+
+        <View style={styles.infoCardLarge}>
+          <Text style={styles.infoLabel}>🍽 Porsiyon</Text>
+          <View style={styles.portionControl}>
+            <Pressable
+              onPress={() => setPortions(Math.max(1, (portions ?? 1) - 1))}
+              style={[styles.portionButton, (portions ?? 1) <= 1 && styles.portionButtonDisabled]}
+              disabled={(portions ?? 1) <= 1}
+            >
+              <Text style={[styles.portionButtonText, (portions ?? 1) <= 1 && styles.portionButtonTextDisabled]}>−</Text>
+            </Pressable>
+            <Text style={styles.portionDisplay}>{portions ?? recipe.servings ?? 1}</Text>
+            <Pressable
+              onPress={() => setPortions((portions ?? 1) + 1)}
+              style={styles.portionButton}
+            >
+              <Text style={styles.portionButtonText}>+</Text>
+            </Pressable>
+          </View>
+        </View>
+
+        <View style={styles.infoCardSmall}>
           <Text style={styles.infoLabel}>📊 Zorluk</Text>
           <Text style={styles.infoValue}>{recipe.difficulty?.toUpperCase() ?? 'EASY'}</Text>
         </View>
@@ -166,8 +187,11 @@ export default function RecipeDetailScreen() {
                 const isPantry = pantryItems.some(
                   (p) => p.name.toLowerCase() === ingredient.name.toLowerCase()
                 );
+                const baseServings = recipe.servings ?? 1;
+                const currentPortions = portions ?? baseServings;
+                const scaleFactor = currentPortions / baseServings;
                 const scaledQuantity = ingredient.quantity
-                  ? (parseFloat(ingredient.quantity) * portions).toFixed(2)
+                  ? (parseFloat(ingredient.quantity) * scaleFactor).toFixed(2).replace(/\.00$/, '').replace(/(\.\d)0$/, '$1')
                   : null;
                 return (
                   <View key={idx} style={styles.ingredientRow}>
@@ -243,6 +267,18 @@ export default function RecipeDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#ffffff',
+  },
+  backButton: {
+    position: 'absolute',
+    left: 16,
+    zIndex: 10,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   heroContainer: {
     width: '100%',
@@ -297,38 +333,30 @@ const styles = StyleSheet.create({
     color: '#fff',
     opacity: 0.8,
   },
-  scorePortionRow: {
-    flexDirection: shouldStackVertically(360) ? 'column' : 'row',
-    gap: moderateScale(12),
-    alignItems: shouldStackVertically(360) ? 'flex-start' : 'flex-end',
-  },
-  portionSection: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignContent: 'space-between',
-    flex: 1,
-
-    gap: moderateScale(6),
-  },
-  portionLabel: {
-    fontSize: 18,
-    color: '#fff',
-    opacity: 0.8,
-  },
   quickInfoContainer: {
     flexDirection: shouldStackVertically(300) ? 'column' : 'row',
     gap: moderateScale(12),
     paddingHorizontal: getSafeHorizontalPadding(),
     marginBottom: moderateScale(24),
   },
-  infoCard: {
+  infoCardSmall: {
     flex: 1,
-    minWidth: shouldStackVertically(300) ? '100%' : undefined,
+    maxWidth: '25%',
     backgroundColor: 'rgba(255,255,255,0.3)',
     borderRadius: moderateScale(12),
-    padding: moderateScale(12),
+    padding: moderateScale(10),
     alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  infoCardLarge: {
+    flex: 2,
+    maxWidth: '50%',
+    backgroundColor: 'rgba(255,255,255,0.3)',
+    borderRadius: moderateScale(12),
+    padding: moderateScale(10),
+    alignItems: 'center',
+    justifyContent: 'center',
     gap: 4,
   },
   infoLabel: {

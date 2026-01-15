@@ -1,6 +1,6 @@
 import { StyleSheet, View, ScrollView } from 'react-native';
 
-import { GlassCard } from '@/components/GlassCard';
+import { GlassCard, SectionContainer } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { useGameificationStore } from '@/store/gamificationStore';
@@ -30,47 +30,57 @@ export default function ProgressScreen() {
         <Text style={styles.title}>İlerleme</Text>
         <Text style={styles.subtitle}>Haftalık Özet</Text>
 
-        <GlassCard>
-          <Text style={styles.cardTitle}>Kurtarılan Malzeme</Text>
-          <Text style={styles.metric}>{stats.totalSavedIngredients}</Text>
-          <Text style={styles.cardBody}>Bu hafta pişirerek tasarruf yaptınız</Text>
-        </GlassCard>
-
-        <GlassCard>
-          <Text style={styles.cardTitle}>Çalışma Serisi (Streak)</Text>
-          <View style={styles.streakContainer}>
-            <View style={styles.streakItem}>
-              <Text style={styles.streakMetric}>{stats.currentStreak}</Text>
-              <Text style={styles.streakLabel}>gün (Bu serinin)</Text>
+        {/* Savings Section */}
+        <SectionContainer title="Tasarruf" style={styles.savingsSection}>
+          <GlassCard variant="elevated">
+            <View style={styles.metricRow}>
+              <View>
+                <Text style={styles.metric}>{stats.totalSavedIngredients}</Text>
+                <Text style={styles.metricLabel}>Kurtarılan Malzeme</Text>
+              </View>
+              <Text style={styles.savingsEmoji}>🥗</Text>
             </View>
-            <View style={styles.streakSeparator} />
-            <View style={styles.streakItem}>
-              <Text style={styles.streakMetric}>{stats.longestStreak}</Text>
-              <Text style={styles.streakLabel}>gün (En uzun)</Text>
-            </View>
-          </View>
-        </GlassCard>
+            <Text style={styles.cardBody}>Bu hafta pişirerek tasarruf yaptınız</Text>
+          </GlassCard>
+        </SectionContainer>
 
-        <GlassCard>
-          <Text style={styles.cardTitle}>Aktivite Özeti</Text>
+        {/* Streak Section */}
+        <SectionContainer title="Seri" style={styles.streakSection}>
+          <GlassCard variant="elevated">
+            <View style={styles.streakContainer}>
+              <View style={styles.streakItem}>
+                <Text style={styles.streakMetric}>{stats.currentStreak}</Text>
+                <Text style={styles.streakLabel}>gün (Bu serinin)</Text>
+              </View>
+              <View style={styles.streakSeparator} />
+              <View style={styles.streakItem}>
+                <Text style={styles.streakMetric}>{stats.longestStreak}</Text>
+                <Text style={styles.streakLabel}>gün (En uzun)</Text>
+              </View>
+            </View>
+          </GlassCard>
+        </SectionContainer>
+
+        {/* Activity Section */}
+        <SectionContainer title="Aktivite" style={styles.activitySection}>
           <View style={styles.statsGrid}>
-            <View style={styles.statItem}>
+            <View style={styles.statCard}>
               <Text style={styles.statValue}>{stats.totalCookedCount}</Text>
-              <Text style={styles.statLabel}>Pişirilen Tarif</Text>
+              <Text style={styles.statLabel}>Pişirilen</Text>
             </View>
-            <View style={styles.statItem}>
+            <View style={styles.statCard}>
               <Text style={styles.statValue}>{stats.totalPlansCreated}</Text>
-              <Text style={styles.statLabel}>Plan Oluşturdu</Text>
+              <Text style={styles.statLabel}>Plan</Text>
             </View>
-            <View style={styles.statItem}>
+            <View style={styles.statCard}>
               <Text style={styles.statValue}>{stats.totalImported}</Text>
-              <Text style={styles.statLabel}>İthal Edilen</Text>
+              <Text style={styles.statLabel}>Import</Text>
             </View>
           </View>
-        </GlassCard>
+        </SectionContainer>
 
-        <GlassCard>
-          <Text style={styles.cardTitle}>Rozetler ({unlockedBadgeObjects.length})</Text>
+        {/* Badges Section */}
+        <SectionContainer title={`Rozetler (${unlockedBadgeObjects.length})`} style={styles.badgesSection}>
           {unlockedBadgeObjects.length > 0 ? (
             <View style={styles.badgeGrid}>
               {unlockedBadgeObjects.map((badge) => (
@@ -81,9 +91,11 @@ export default function ProgressScreen() {
               ))}
             </View>
           ) : (
-            <Text style={styles.cardBody}>Henüz rozet kazanmadınız. Başlayın!</Text>
+            <GlassCard variant="subtle">
+              <Text style={styles.cardBody}>Henüz rozet kazanmadınız. Başlayın!</Text>
+            </GlassCard>
           )}
-        </GlassCard>
+        </SectionContainer>
       </ScrollView>
     </Screen>
   );
@@ -104,16 +116,40 @@ const styles = StyleSheet.create({
     fontFamily: 'SpaceMono',
     marginBottom: moderateScale(20),
   },
-  cardTitle: {
-    fontSize: scaleFontSize(18),
-    fontWeight: '600',
-    marginBottom: moderateScale(12),
+  savingsSection: {
+    backgroundColor: 'rgba(74, 222, 128, 0.04)',
+    borderColor: 'rgba(74, 222, 128, 0.1)',
+  },
+  streakSection: {
+    backgroundColor: 'rgba(255, 107, 107, 0.04)',
+    borderColor: 'rgba(255, 107, 107, 0.1)',
+  },
+  activitySection: {
+    backgroundColor: 'rgba(0, 122, 255, 0.03)',
+    borderColor: 'rgba(0, 122, 255, 0.08)',
+  },
+  badgesSection: {
+    backgroundColor: 'rgba(167, 139, 250, 0.04)',
+    borderColor: 'rgba(167, 139, 250, 0.1)',
+  },
+  metricRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   metric: {
-    fontSize: scaleFontSize(36),
+    fontSize: scaleFontSize(42),
     fontWeight: '700',
     fontFamily: 'SpaceMono',
-    marginBottom: moderateScale(8),
+    color: '#22c55e',
+  },
+  metricLabel: {
+    fontSize: scaleFontSize(14),
+    fontWeight: '600',
+    opacity: 0.7,
+  },
+  savingsEmoji: {
+    fontSize: 48,
   },
   cardBody: {
     opacity: 0.7,
@@ -130,7 +166,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   streakMetric: {
-    fontSize: 32,
+    fontSize: 36,
     fontWeight: '700',
     fontFamily: 'SpaceMono',
     color: '#FF6B6B',
@@ -142,26 +178,34 @@ const styles = StyleSheet.create({
   },
   streakSeparator: {
     width: 1,
-    height: 40,
-    backgroundColor: 'rgba(0,0,0,0.1)',
+    height: 50,
+    backgroundColor: 'rgba(255,107,107,0.2)',
     marginHorizontal: 16,
   },
   statsGrid: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginTop: 12,
+    justifyContent: 'space-between',
+    gap: getResponsiveGap(12),
   },
-  statItem: {
-    alignItems: 'center',
+  statCard: {
     flex: 1,
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 122, 255, 0.08)',
+    borderRadius: moderateScale(16),
+    paddingVertical: moderateScale(16),
+    paddingHorizontal: moderateScale(8),
+    borderWidth: 1,
+    borderColor: 'rgba(0, 122, 255, 0.15)',
   },
   statValue: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: '700',
     fontFamily: 'SpaceMono',
+    color: '#007AFF',
   },
   statLabel: {
-    fontSize: 12,
+    fontSize: 11,
+    fontWeight: '600',
     opacity: 0.7,
     marginTop: 4,
     textAlign: 'center',
@@ -170,24 +214,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: getResponsiveGap(12),
-    marginTop: moderateScale(12),
   },
   badgeItem: {
     alignItems: 'center',
     width: `${(100 / getGridColumns(3) - 2)}%`,
     minWidth: 100,
     padding: moderateScale(12),
-    backgroundColor: 'rgba(0,0,0,0.05)',
-    borderRadius: moderateScale(12),
+    backgroundColor: 'rgba(167, 139, 250, 0.1)',
+    borderRadius: moderateScale(16),
+    borderWidth: 1,
+    borderColor: 'rgba(167, 139, 250, 0.2)',
   },
   badgeIcon: {
-    fontSize: 32,
-    marginBottom: 4,
+    fontSize: 36,
+    marginBottom: 6,
   },
   badgeName: {
     fontSize: 11,
-    fontWeight: '500',
+    fontWeight: '600',
     textAlign: 'center',
-    opacity: 0.8,
+    opacity: 0.9,
   },
 });

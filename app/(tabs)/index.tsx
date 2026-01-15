@@ -27,8 +27,6 @@ import {
   getModalMaxHeight,
   shouldStackVertically,
   getResponsiveGap,
-  scaleWidth,
-  scaleHeight,
 } from '@/lib/responsive';
 
 // Enable LayoutAnimation on Android
@@ -395,7 +393,8 @@ export default function PantryScreen() {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.quickAddScroll}>
+          contentContainerStyle={styles.quickAddScroll}
+          keyboardShouldPersistTaps="handled">
           {quickAddSuggestions.map((suggestion) => {
             const isInPantry = items.some(
               (item) => item.name.toLowerCase() === suggestion.id.toLowerCase()
@@ -403,7 +402,13 @@ export default function PantryScreen() {
             return (
               <Pressable
                 key={suggestion.id}
-                onPress={() => !isInPantry && handleQuickAdd(suggestion.name)}
+                onPress={() => {
+                  if (!isInPantry) {
+                    handleQuickAdd(suggestion.name);
+                  }
+                }}
+                disabled={isInPantry}
+                hitSlop={8}
                 style={({ pressed }) => [
                   styles.quickAddChip,
                   isInPantry && styles.quickAddChipAdded,
@@ -629,12 +634,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   backgroundGradient: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    height: scaleHeight(300),
-    backgroundColor: 'rgba(226, 88, 34, 0.05)',
+    display: 'none',
   },
 
   // Header
@@ -674,24 +674,24 @@ const styles = StyleSheet.create({
   statsRow: {
     flexDirection: shouldStackVertically(300) ? 'column' : 'row',
     paddingHorizontal: getSafeHorizontalPadding(),
-    gap: getResponsiveGap(10),
-    marginBottom: moderateScale(16),
+    gap: getResponsiveGap(8),
+    marginBottom: moderateScale(12),
   },
   statCard: {
     flex: 1,
     minWidth: shouldStackVertically(300) ? '100%' : undefined,
     backgroundColor: 'rgba(0,0,0,0.03)',
-    borderRadius: moderateScale(12),
-    padding: moderateScale(12),
+    borderRadius: moderateScale(10),
+    padding: moderateScale(8),
     alignItems: 'center',
   },
   statNumber: {
-    fontSize: scaleFontSize(20),
+    fontSize: scaleFontSize(18),
     fontWeight: '700',
-    marginBottom: 2,
+    marginBottom: 1,
   },
   statLabel: {
-    fontSize: scaleFontSize(10),
+    fontSize: scaleFontSize(9),
     fontWeight: '500',
     textTransform: 'uppercase',
     letterSpacing: 0.5,
@@ -722,7 +722,7 @@ const styles = StyleSheet.create({
   },
   quickAddScroll: {
     flexDirection: 'row',
-    gap: 8,
+    gap: 12,
     paddingRight: 20,
   },
   quickAddChip: {

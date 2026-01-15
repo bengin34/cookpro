@@ -1,16 +1,29 @@
-import { Link } from 'expo-router';
-import { StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Link, useRouter } from 'expo-router';
+import { StyleSheet, Pressable } from 'react-native';
 
 import { GlassCard } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { usePlanStore } from '@/store/planStore';
+import Colors from '@/constants/Colors';
 
 export default function ShoppingListScreen() {
+  const router = useRouter();
   const shoppingList = usePlanStore((state) => state.shoppingList);
 
   return (
     <Screen>
+      {/* Back Button */}
+      <Pressable
+        style={styles.backButton}
+        onPress={() => router.back()}
+        hitSlop={8}
+      >
+        <Ionicons name="chevron-back" size={24} color={Colors.light.tint} />
+        <Text style={styles.backText}>Back</Text>
+      </Pressable>
+
       <Text style={styles.title}>Shopping List</Text>
       <Text style={styles.subtitle}>Plan -> eksik malzemeler</Text>
 
@@ -42,6 +55,17 @@ export default function ShoppingListScreen() {
 }
 
 const styles = StyleSheet.create({
+  backButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+    marginLeft: -8,
+  },
+  backText: {
+    fontSize: 16,
+    color: Colors.light.tint,
+    fontWeight: '500',
+  },
   title: {
     fontSize: 30,
     fontWeight: '700',

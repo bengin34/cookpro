@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useMemo, useEffect } from 'react';
 import { StyleSheet, View, ScrollView, RefreshControl } from 'react-native';
-import { useFocusEffect } from '@react-navigation/native';
 
-import { GlassCard } from '@/components/GlassCard';
+import { GlassCard, SectionContainer } from '@/components/GlassCard';
 import { Screen } from '@/components/Screen';
 import { Text } from '@/components/Themed';
 import { RecipeCard } from '@/components/RecipeCard';
@@ -34,13 +33,6 @@ export default function DiscoverScreen() {
     staleTimeThreshold: 1000 * 60 * 5, // 5 minutes
   });
 
-  // Refetch when screen comes into focus
-  useFocusEffect(
-    React.useCallback(() => {
-      // Only refetch if data is stale (handled by React Query's staleTime)
-      refetch();
-    }, [refetch])
-  );
 
   const rankedRecipes = useMemo(() => {
     return recipes
@@ -120,45 +112,47 @@ export default function DiscoverScreen() {
 
         {recipes.length > 0 && (
           <View style={styles.container}>
-            {/* Top Recommendations */}
-            {topRecipes.length > 0 && (
-              <RecipesCarousel
-                title="⭐ En iyi uyumlar"
-                recipes={topRecipes.map((r) => ({
-                  recipe: r.recipe,
-                  score: r.scoreInfo.score,
-                  missingCount: r.scoreInfo.missingCount,
-                }))}
-              />
-            )}
+            {/* Carousels Section */}
+            <SectionContainer title="Senin İçin Öneriler" style={styles.carouselSection}>
+              {/* Top Recommendations */}
+              {topRecipes.length > 0 && (
+                <RecipesCarousel
+                  title="⭐ En iyi uyumlar"
+                  recipes={topRecipes.map((r) => ({
+                    recipe: r.recipe,
+                    score: r.scoreInfo.score,
+                    missingCount: r.scoreInfo.missingCount,
+                  }))}
+                />
+              )}
 
-            {/* Quick Wins - All ingredients available */}
-            {quickWinsRecipes.length > 0 && (
-              <RecipesCarousel
-                title="✓ Eksik olmayan tarifler"
-                recipes={quickWinsRecipes.map((r) => ({
-                  recipe: r.recipe,
-                  score: r.scoreInfo.score,
-                  missingCount: r.scoreInfo.missingCount,
-                }))}
-              />
-            )}
+              {/* Quick Wins - All ingredients available */}
+              {quickWinsRecipes.length > 0 && (
+                <RecipesCarousel
+                  title="✓ Eksik olmayan tarifler"
+                  recipes={quickWinsRecipes.map((r) => ({
+                    recipe: r.recipe,
+                    score: r.scoreInfo.score,
+                    missingCount: r.scoreInfo.missingCount,
+                  }))}
+                />
+              )}
 
-            {/* Fast Recipes */}
-            {fastRecipes.length > 0 && (
-              <RecipesCarousel
-                title="⚡ Hızlı tarifler (≤20 dk)"
-                recipes={fastRecipes.map((r) => ({
-                  recipe: r.recipe,
-                  score: r.scoreInfo.score,
-                  missingCount: r.scoreInfo.missingCount,
-                }))}
-              />
-            )}
+              {/* Fast Recipes */}
+              {fastRecipes.length > 0 && (
+                <RecipesCarousel
+                  title="⚡ Hızlı tarifler (≤20 dk)"
+                  recipes={fastRecipes.map((r) => ({
+                    recipe: r.recipe,
+                    score: r.scoreInfo.score,
+                    missingCount: r.scoreInfo.missingCount,
+                  }))}
+                />
+              )}
+            </SectionContainer>
 
             {/* All Recipes - Full List */}
-            <View style={styles.allRecipesSection}>
-              <Text style={styles.sectionTitle}>📚 Tüm Tarifler</Text>
+            <SectionContainer title="Tüm Tarifler" style={styles.allRecipesSection}>
               {rankedRecipes.map(({ recipe, scoreInfo }) => (
                 <RecipeCard
                   key={recipe.id}
@@ -167,7 +161,7 @@ export default function DiscoverScreen() {
                   missingCount={scoreInfo.missingCount}
                 />
               ))}
-            </View>
+            </SectionContainer>
           </View>
         )}
       </ScrollView>
@@ -177,7 +171,7 @@ export default function DiscoverScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    gap: moderateScale(24),
+    gap: moderateScale(16),
   },
   title: {
     fontSize: scaleFontSize(30),
@@ -193,8 +187,13 @@ const styles = StyleSheet.create({
     fontFamily: 'SpaceMono',
     marginBottom: moderateScale(24),
   },
+  carouselSection: {
+    backgroundColor: 'rgba(194, 65, 12, 0.04)',
+    borderColor: 'rgba(194, 65, 12, 0.1)',
+  },
   allRecipesSection: {
-    marginTop: moderateScale(8),
+    backgroundColor: 'rgba(0, 122, 255, 0.03)',
+    borderColor: 'rgba(0, 122, 255, 0.08)',
   },
   sectionTitle: {
     fontSize: scaleFontSize(18),

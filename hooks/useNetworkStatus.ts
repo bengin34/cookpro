@@ -1,46 +1,21 @@
-import { useEffect, useState } from 'react';
-import NetInfo from '@react-native-community/netinfo';
+import { useNetworkStatusContext } from '@/providers/NetworkStatusProvider';
 
-interface NetworkStatus {
+export interface NetworkStatus {
   isOnline: boolean;
   isOffline: boolean;
   type: string | null;
   isWifi: boolean;
 }
 
+/**
+ * Hook to access the shared network status from NetworkStatusProvider.
+ *
+ * IMPORTANT: This hook now uses a shared context instead of creating
+ * individual NetInfo listeners. This prevents performance issues when
+ * many components (e.g., RecipeCards) use this hook simultaneously.
+ *
+ * Make sure NetworkStatusProvider is wrapped around your app in _layout.tsx.
+ */
 export function useNetworkStatus(): NetworkStatus {
-  const [networkStatus, setNetworkStatus] = useState<NetworkStatus>({
-    isOnline: true,
-    isOffline: false,
-    type: null,
-    isWifi: false,
-  });
-
-  useEffect(() => {
-    // Get initial network state
-    NetInfo.fetch().then((state) => {
-      setNetworkStatus({
-        isOnline: state.isConnected ?? true,
-        isOffline: !(state.isConnected ?? true),
-        type: state.type,
-        isWifi: state.type === 'wifi',
-      });
-    });
-
-    // Subscribe to network state changes
-    const unsubscribe = NetInfo.addEventListener((state) => {
-      setNetworkStatus({
-        isOnline: state.isConnected ?? true,
-        isOffline: !(state.isConnected ?? true),
-        type: state.type,
-        isWifi: state.type === 'wifi',
-      });
-    });
-
-    return () => {
-      unsubscribe();
-    };
-  }, []);
-
-  return networkStatus;
+  return useNetworkStatusContext();
 }
