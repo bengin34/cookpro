@@ -100,16 +100,21 @@ export function RecipeCard({ recipe, score, missingCount }: RecipeCardProps) {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    borderRadius: 16,
+    borderRadius: 20,
     overflow: 'hidden',
-    backgroundColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: '#fff',
     marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    elevation: 3,
   },
   imageWrapper: {
     width: '100%',
     height: 200,
     position: 'relative',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#e5e7eb',
   },
   image: {
     width: '100%',
@@ -157,11 +162,13 @@ const styles = StyleSheet.create({
   content: {
     padding: 16,
     gap: 10,
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 16,
     fontWeight: '700',
     lineHeight: 20,
+    color: '#1f2937',
   },
   meta: {
     flexDirection: 'row',
@@ -169,7 +176,7 @@ const styles = StyleSheet.create({
   },
   metaText: {
     fontSize: 12,
-    opacity: 0.7,
+    color: '#6b7280',
   },
   missingTag: {
     backgroundColor: 'rgba(239,68,68,0.15)',

@@ -192,8 +192,8 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(194, 65, 12, 0.1)',
   },
   allRecipesSection: {
-    backgroundColor: 'rgba(0, 122, 255, 0.03)',
-    borderColor: 'rgba(0, 122, 255, 0.08)',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
   },
   sectionTitle: {
     fontSize: scaleFontSize(18),
